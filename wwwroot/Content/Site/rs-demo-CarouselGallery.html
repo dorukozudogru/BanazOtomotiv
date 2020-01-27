@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html class="html">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png" />
+
+        <title>Slider Revolution 5</title>
+
+        <meta name="description" content="Slider Revolution Example" />
+        <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+        <meta name="author" content="ThemePunch" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:100%7COpen+Sans:300,400,400i,600,700,800">
+        <!-- inject:css -->
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/vendor/bootsnav/css/bootsnav.css">
+        <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/vendor/alien-icon/css/style.css">
+        <link rel="stylesheet" href="assets/vendor/owl.carousel2/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="assets/vendor/switchery/switchery.min.css">
+        <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+        <link rel="stylesheet" href="assets/vendor/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="assets/css/alien.min.css">
+        <!-- endinject -->
+
+        <!-- revolution css -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Poppins:600%2C400">
+        <link rel="stylesheet" href="assets/vendor/revolution-slider/revolution/fonts/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="assets/vendor/revolution-slider/revolution/css/settings.css">
+
+        <!-- REVOLUTION LAYERS STYLES -->
+        <style type="text/css">.tp-gradientstyle{background:-moz-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.75) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(50%,rgba(0,0,0,0)),color-stop(99%,rgba(0,0,0,0.83)),color-stop(100%,rgba(0,0,0,0.75))); background:-webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-o-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.75) 100%); background:-ms-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.75) 100%); background:linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.75) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000',endColorstr='#d9000000',GradientType=0 )}</style>
+        <style type="text/css">.gyges .tp-thumb{opacity:1}.gyges .tp-thumb-img-wrap{padding:3px; background-color:rgba(17,17,17,1); display:inline-block; width:100%; height:100%; position:relative; margin:0px; box-sizing:border-box;  transition:all 0.3s;  -webkit-transition:all 0.3s}.gyges .tp-thumb-image{padding:3px;  display:block;  box-sizing:border-box;  position:relative;  -webkit-box-shadow:inset 5px 5px 10px 0px rgba(17,17,17,1); -moz-box-shadow:inset 5px 5px 10px 0px rgba(17,17,17,1); box-shadow:inset 5px 5px 10px 0px rgba(17,17,17,1)}.gyges .tp-thumb:hover .tp-thumb-img-wrap,.gyges .tp-thumb.selected .tp-thumb-img-wrap{background:-moz-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%);background:-webkit-gradient(left top,left bottom,color-stop(0%,rgba(255,255,255,1)),color-stop(100%,rgba(255,255,255,1)));background:-webkit-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%);background:-o-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%);background:-ms-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%);background:linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%)}.gyges .tp-tab{opacity:1; padding:10px; box-sizing:border-box; font-family:"roboto",sans-serif; border-bottom:1px solid rgba(255,255,255,0.15)}.gyges .tp-tab-image{width:60px; height:60px;  max-height:100%;  max-width:100%; position:relative; display:inline-block; float:left}.gyges .tp-tab-content{background:rgba(0,0,0,0);   position:relative;  padding:15px 15px 15px 85px;  left:0px;  overflow:hidden;  margin-top:-15px;  box-sizing:border-box;  color:rgba(51,51,51,0);  display:inline-block;  width:100%;  height:100%; position:absolute}.gyges .tp-tab-date{display:block; color:rgba(255,255,255,0.5); font-weight:500; font-size:12px; margin-bottom:0px}.gyges .tp-tab-title{display:block;   text-align:left;  color:rgba(255,255,255,1);  font-size:14px;  font-weight:500;  text-transform:none;  line-height:17px}.gyges .tp-tab:hover,.gyges .tp-tab.selected{background:rgba(0,0,0,0.51)}.gyges .tp-tab-mask{}@media only screen and (max-width:960px){}@media only screen and (max-width:768px){}</style>
+    </head>
+
+    <body>
+        <!--header start-->
+        <header>
+            <!-- Start Navigation -->
+            <nav id="mainNav" class="navbar navbar-default navbar-fixed bootsnav">
+
+                <!-- Start Top Search -->
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top Search -->
+
+                <div class="container">
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+                                    <i class="fa fa-shopping-bag"></i>
+                                    <span class="badge">3</span>
+                                </a>
+                                <ul class="dropdown-menu cart-list">
+                                    <li>
+                                        <a href="#" class="photo"><img src="assets/imgs/cart-1.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Delica omtantur </a></h6>
+                                        <p>2x - <span class="price">$99.99</span></p>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="photo"><img src="assets/imgs/cart-2.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Omnes ocurreret</a></h6>
+                                        <p>1x - <span class="price">$33.33</span></p>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="photo"><img src="assets/imgs/cart-3.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Agam facilisis</a></h6>
+                                        <p>2x - <span class="price">$99.99</span></p>
+                                    </li>
+                                    <li class="total">
+                                        <span class="pull-right"><strong>Total</strong>: $0.00</span>
+                                        <a href="#" class="btn btn-default btn-cart">Cart</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Atribute Navigation -->
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="./index.html"><img src="assets/imgs/logo.png" class="logo logo-scrolled" alt=""></a>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="" data-out="">
+                            <li class="dropdown">
+                                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" >Home</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Agency</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-agency1.html">Agency 1</a></li>
+                                            <li><a href="mp-agency2.html">Agency 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Specialized</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-fashion.html">Fashion</a></li>
+                                            <li><a href="mp-education.html">Education</a></li>
+                                            <li><a href="mp-interior.html">Interior</a></li>
+                                            <li><a href="mp-car.html">Car Dealer</a></li>
+                                            <li><a href="mp-resume.html">Resume/CV</a></li>
+                                            <li><a href="mp-restaurant.html">Restaurant</a></li>
+                                            <li><a href="mp-startup2.html">Startup</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Business</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-business1.html">Business 1</a></li>
+                                            <li><a href="mp-business2.html">Business 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >General</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-general.html">General 1</a></li>
+                                            <li><a href="mp-general2.html">General 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="mp-corporate1.html">Corporate</a></li>
+                                    <li><a href="mp-creative2.html">Creative</a></li>
+                                    <li><a href="shop-3.html">E-Commerce</a></li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Portfolio</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-portfolio1.html">Portfolio 1</a></li>
+                                            <li><a href="mp-portfolio2.html">Portfolio 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Photography</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-photography1.html">Photography 1</a></li>
+                                            <li><a href="mp-photography2.html">Photography 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="blog-classic.html">Blog Classic</a></li>
+                                            <li><a href="blog-classic-2.html">Blog Classic 2</a></li>
+                                            <li><a href="blog-single.html">Blog Standard</a></li>
+                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="mp-parallax.html">Parallax</a></li>
+                                    <li><a href="mp-app-landing.html">App Landing</a></li>
+                                    <li><a class="ScrollTo" href="#onepage">One Pages Demo</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown megamenu-fw">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <ul class="dropdown-menu megamenu-content" role="menu">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-menu col-md-3">
+                                                <h6 class="title">Title Menu One</h6>
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="about-me.html">About Me</a></li>
+                                                        <li><a href="about-us-1.html">About Us 1</a></li>
+                                                        <li><a href="about-us-2.html">About Us 2</a></li>
+                                                        <li><a href="service-1.html">Services 1</a></li>
+                                                        <li><a href="service-2.html">Services 2</a></li>
+                                                        <li><a href="career.html">Career</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                            <div class="col-menu col-md-3">
+                                                <h6 class="title">Title Menu Two</h6>
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="team-1.html">Our Team 1</a></li>
+                                                        <li><a href="team-2.html">Our Team 2</a></li>
+                                                        <li><a href="faq-1.html">FAQ 1</a></li>
+                                                        <li><a href="faq-2.html">FAQ 2</a></li>
+                                                        <li><a href="404.html">404 Error</a></li>
+                                                        <li><a href="rs-demo-404-ErrorPage.html">404 Error Alt</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                            <div class="col-menu col-md-3">
+                                                <h6 class="title">Title Menu Three</h6>
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="pricing-table-1.html">Pricing Table 1</a></li>
+                                                        <li><a href="pricing-table-2.html">Pricing Table 2</a></li>
+                                                        <li><a href="contact-us-1.html">Contact Us 1</a></li>
+                                                        <li><a href="contact-us-2.html">Contact Us 2</a></li>
+                                                        <li><a href="contact-us-3.html">Contact Us 3</a></li>
+                                                        <li><a href="rs-demo-coming-soon.html">Coming Soon</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-menu col-md-3">
+                                                <h6 class="title">Title Menu Four</h6>
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="rs-demo-ComingSoon2.html">Coming Soon Alt</a></li>
+                                                        <li><a href="maintenance.html">Maintenance</a></li>
+                                                        <li><a href="login-1.html">Login 1</a></li>
+                                                        <li><a href="login-2.html">Login/Registration 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                        </div><!-- end row -->
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Features</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Navbar</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="nav-default.html">Nav Befault</a></li>
+                                            <li><a href="nav-brand-center.html">Nav Brand Center</a></li>
+                                            <li><a href="nav-brand-center-alt.html">Nav Brand Center alt</a></li>
+                                            <li><a href="nav-brand-top.html">Nav Brand Top</a></li>
+                                            <li><a href="nav-menu-left.html">Nav Left Align</a></li>
+                                            <li><a href="nav-menu-attr.html">Nav Attr</a></li>
+                                            <li><a href="nav-full.html">Nav Fullscreen </a></li>
+                                            <li><a href="nav-sidebar.html">Nav Sidebar </a></li>
+                                            <li><a href="nav-bottom.html">Nav Bottom</a></li>
+                                            <li><a href="nav-scrollspy.html">Nav Scrollspy</a></li>
+                                            <li><a href="nav-scrollspy-sidebar.html">Nav Scrollspy Sidebar</a></li>
+                                            <li><a href="nav-transparent-with-white-border.html">Nav Trans..Border</a></li>
+                                            <li><a href="nav-transparent-dark-link.html">Nav Trans.. Dark Link</a></li>
+                                            <li><a href="nav-semi-transparent-light.html">Nav Semi Trans.. Light</a></li>
+                                            <li><a href="nav-semi-transparent-dark.html">Nav Semi Trans.. Dark</a></li>
+                                            <li><a href="nav-black.html">Navbar Black</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Sliders Banner</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="sc-slider_full_screen.html">Slider Full Screen</a></li>
+                                            <li><a href="sc-slider_full_width.html">Slider Full Width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="rs-demo-home.html">Slider Revolution</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Parallax Banner</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="sc-banner_1.html">Banner 1</a></li>
+                                            <li><a href="sc-banner_2.html">Banner 2</a></li>
+                                            <li><a href="sc-banner_3.html">Banner 3</a></li>
+                                            <li><a href="sc-banner_4.html">Banner 4</a></li>
+                                            <li><a href="sc-banner_5.html">Banner 5</a></li>
+                                            <li><a href="sc-banner_6.html">Banner 6</a></li>
+                                            <li><a href="sc-banner_7.html">Banner 7</a></li>
+                                            <li><a href="sc-banner_8.html">Banner 8</a></li>
+                                            <li><a href="sc-banner_9.html">Banner 9</a></li>
+                                            <li><a href="sc-banner_10.html">Banner 10</a></li>
+                                            <li><a href="sc-banner_11.html">Banner 11</a></li>
+                                            <li><a href="sc-banner_12.html">Banner 12</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="sc-page_title.html">Page Title Variations</a></li>
+                                    <li><a href="sc-footers.html">Footer Variations</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Portfolio</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Grid Portfolio</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="portfolio-grid-2.html">Grid 2</a></li>
+                                            <li><a href="portfolio-grid-3.html">Grid 3</a></li>
+                                            <li><a href="portfolio-grid-4.html">Grid 4</a></li>
+                                            <li><a href="portfolio-grid-5.html">Grid 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Grid with Title</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="portfolio-grid-title-1.html">Grid 1</a></li>
+                                            <li><a href="portfolio-grid-title-2.html">Grid 2</a></li>
+                                            <li><a href="portfolio-grid-title-3.html">Grid 3</a></li>
+                                            <li><a href="portfolio-grid-title-4.html">Grid 4</a></li>
+                                            <li><a href="portfolio-grid-title-5.html">Grid 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Masonry Portfolio</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="portfolio-masonry-2.html">Masonry 2</a></li>
+                                            <li><a href="portfolio-masonry-3.html">Masonry 3</a></li>
+                                            <li><a href="portfolio-masonry-4.html">Masonry 4</a></li>
+                                            <li><a href="portfolio-masonry-5.html">Masonry 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Masonry with Title</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="portfolio-masonry-title-2.html">Masonry 2</a></li>
+                                            <li><a href="portfolio-masonry-title-3.html">Masonry 3</a></li>
+                                            <li><a href="portfolio-masonry-title-4.html">Masonry 4</a></li>
+                                            <li><a href="portfolio-masonry-title-5.html">Masonry 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio-masonry-special.html">Masonry Special</a></li>
+                                    <li><a href="portfolio-masonry-special-alt.html">Masonry Special Alt</a></li>
+                                    <li><a href="portfolio-details-1.html">Portfolio Details 1</a></li>
+                                    <li><a href="portfolio-details-2.html">Portfolio Details 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown megamenu-fw">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shortcodes</a>
+                                <ul class="dropdown-menu megamenu-content" role="menu">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-menu col-md-3">
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="sc-accordion.html">Accordion/Toggle</a></li>
+                                                        <li><a href="sc-alerts.html">Alerts</a></li>
+                                                        <li><a href="sc-blurb.html">Blurb</a></li>
+                                                        <li><a href="sc-buttons.html">Buttons</a></li>
+                                                        <li><a href="sc-bullets.html">Bullets</a></li>
+                                                        <li><a href="sc-blogs.html">Blog Post</a></li>
+                                                        <li><a href="sc-carousel.html">Carousel</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                            <div class="col-menu col-md-3">
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="sc-clients.html">Clients</a></li>
+                                                        <li><a href="sc-custom_line_icons.html">Custom Line Icons</a></li>
+                                                        <li><a href="sc-form.html">Forms</a></li>
+                                                        <li><a href="sc-fun_factors.html">Fun Factors</a></li>
+                                                        <li><a href="sc-heading.html">Heading</a></li>
+                                                        <li><a href="sc-image_post.html">Image Post</a></li>
+                                                        <li><a href="sc-parallax.html">Parallax</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                            <div class="col-menu col-md-3">
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="sc-price_tables.html">Price Tables</a></li>
+                                                        <li><a href="sc-progress_bar.html">Progress Bar</a></li>
+                                                        <li><a href="sc-promo.html">Promotional</a></li>
+                                                        <li><a href="sc-social-links.html">Social Links</a></li>
+                                                        <li><a href="sc-steps.html">Steps</a></li>
+                                                        <li><a href="sc-subscribe.html">Subscriptions</a></li>
+                                                        <li><a href="sc-tabs.html">Tabs</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-menu col-md-3">
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="sc-team.html">Team Members</a></li>
+                                                        <li><a href="sc-testimonials.html">Testimonials</a></li>
+                                                        <li><a href="sc-timeline.html">Timeline</a></li>
+                                                         <li><a href="http://bicon.lab.themebucket.net/" target=“_blank”>Line Icon Pack <small class="label label-primary"> Free</small> </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                        </div><!-- end row -->
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Shop</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shop-2.html">Shop Grid 2</a></li>
+                                    <li><a href="shop-3.html">Shop Grid 3</a></li>
+                                    <li><a href="shop-4.html">Shop Grid 4</a></li>
+                                    <li><a href="shop-single.html">Product Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-left">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog-classic.html">Blog Classic 1</a></li>
+                                    <li><a href="blog-classic-2.html">Blog Classic 2</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog Standard</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                            <li><a href="blog-single.html">Blog Centered</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog Details </a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="blog-details-left-sidebar.html">Details Left Sidebar</a></li>
+                                            <li><a href="blog-details-right-sidebar.html">Details Right Sidebar</a></li>
+                                            <li><a href="blog-details-centered.html">Details Centered</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+
+                <!-- Start Side Menu -->
+                <div class="side">
+                    <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                    <div class="widget">
+                        <h5 class="title">Custom Pages</h5>
+                        <ul class="link">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h5 class="title">About Us</h5>
+                        <p class="light-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae dicta nulla odit, pariatur
+                            quas saepe similique. Accusantium, ad consectetur eius ex facere neque nobis numquam, placeat
+                            quibusdam repellendus tempora?</p>
+                    </div>
+                    <div class="widget">
+                        <h5 class="title">Social Links</h5>
+                        <div class="social-links sl-default border-link round-link colored-link">
+                            <a href="#" class="facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="g-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#" class="youtube">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                            <a href="#" class="dribbble">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+                            <a href="#" class="behance">
+                                <i class="fa fa-behance"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Side Menu -->
+            </nav>
+            <!-- End Navigation -->
+            <div class="clearfix"></div>
+        </header>
+        <!--header end-->
+
+        <!--slider start -->
+        <section class="">
+            <div id="rev_slider_18_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="carousel-gallery" data-source="gallery" style="margin:0px auto;background:#000000;padding:0px;margin-top:0px;margin-bottom:0px;">
+                <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
+                <div id="rev_slider_18_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+                    <ul>    <!-- SLIDE  -->
+                        <li data-index="rs-41" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="assets/vendor/revolution-slider/assets/images/art3-120x120.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Raw Cityscape" data-param1="Photography" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/vendor/revolution-slider/assets/images/dummy_2.png"  alt=""  data-lazyload="assets/vendor/revolution-slider/assets/images/art3.jpg" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  tp-gradientstyle"
+                                 id="slide-41-layer-2"
+                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                                data-width="full"
+                                data-height="['200','200','200','250']"
+                                data-whitespace="nowrap"
+
+                                data-type="shape"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:50px;opacity:0;","speed":2000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 5;"> </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <a class="tp-caption   tp-resizeme"
+                                href="#" target="_self"          id="slide-41-layer-1"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['90','90','79','99']"
+                                data-fontsize="['40','40','25','20']"
+                                data-lineheight="['40','40','25','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-actions=''
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 6; min-width: 580px; max-width: 580px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 500; color: rgba(255,255,255,1);font-family:Roboto;text-decoration: none;">Raw Cityscape </a>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption   tp-resizeme"
+                                 id="slide-41-layer-3"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['35','35','20','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":400,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 7; min-width: 580px; max-width: 580px; white-space: normal; font-size: 15px; line-height: 20px; font-weight: 500; color: rgba(255,255,255,0.75);font-family:Roboto;">The only way to make sense out of change is to plunge into it, move with it, and join the dance.</div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption   tp-resizeme tp-svg-layer"
+                                 id="slide-41-layer-4"
+                                 data-x="['left','left','left','left']" data-hoffset="['721','620','510','367']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['29','29','9','16']"
+                                data-width="50"
+                                data-height="50"
+                                data-whitespace="nowrap"
+                                data-visibility="['on','on','off','off']"
+
+                                data-type="svg"
+                                data-actions='[{"event":"click","action":"togglefullscreen","delay":""}]'
+                                data-svg_src="assets/vendor/revolution-slider/assets/images/ic_fullscreen_24px.svg"
+                                data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-svg_hover="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":600,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"150","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 8; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; color: rgba(255,255,255,0.50);cursor:pointer;"><div class="rs-untoggled-content"> </div><div class="rs-toggled-content"></div></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-42" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="assets/vendor/revolution-slider/assets/images/art4-120x120.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="The Kingdom" data-param1="Exploration" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/vendor/revolution-slider/assets/images/dummy_2.png"  alt=""  data-lazyload="assets/vendor/revolution-slider/assets/images/art4.jpg" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 5 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  tp-gradientstyle"
+                                 id="slide-42-layer-2"
+                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                                data-width="full"
+                                data-height="['200','200','200','250']"
+                                data-whitespace="nowrap"
+
+                                data-type="shape"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:50px;opacity:0;","speed":2000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 9;"> </div>
+
+                            <!-- LAYER NR. 6 -->
+                            <a class="tp-caption   tp-resizeme" href="#" target="_self"          id="slide-42-layer-1"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['91','91','98','120']"
+                                data-fontsize="['40','40','25','20']"
+                                data-lineheight="['40','40','25','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-actions=''
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 10; min-width: 580px; max-width: 580px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 500; color: rgba(255,255,255,1);font-family:Roboto;text-decoration: none;">The Kingdom </a>
+
+                            <!-- LAYER NR. 7 -->
+                            <div class="tp-caption   tp-resizeme"
+                                 id="slide-42-layer-3"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['35','35','20','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":400,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 11; min-width: 580px; max-width: 580px; white-space: normal; font-size: 15px; line-height: 20px; font-weight: 500; color: rgba(255,255,255,0.75);font-family:Roboto;">Zen does not confuse spirituality with thinking about God while one is peeling potatoes. Zen spirituality is just to peel the potatoes. </div>
+
+                            <!-- LAYER NR. 8 -->
+                            <div class="tp-caption   tp-resizeme tp-svg-layer"
+                                 id="slide-42-layer-4"
+                                 data-x="['left','left','left','left']" data-hoffset="['721','620','510','367']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['29','29','9','16']"
+                                data-width="50"
+                                data-height="50"
+                                data-whitespace="nowrap"
+                                data-visibility="['on','on','off','off']"
+
+                                data-type="svg"
+                                data-actions='[{"event":"click","action":"togglefullscreen","delay":""}]'
+                                data-svg_src="assets/vendor/revolution-slider/assets/images/ic_fullscreen_24px.svg"
+                                data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-svg_hover="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":600,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"150","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 12; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; color: rgba(255,255,255,0.50);cursor:pointer;"><div class="rs-untoggled-content"> </div><div class="rs-toggled-content"></div></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-43" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="assets/vendor/revolution-slider/assets/images/art5-120x120.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Going in Deep" data-param1="Miscellaneous" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/vendor/revolution-slider/assets/images/dummy_2.png"  alt=""  data-lazyload="assets/vendor/revolution-slider/assets/images/art5.jpg" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 9 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  tp-gradientstyle"
+                                 id="slide-43-layer-2"
+                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                                data-width="full"
+                                data-height="['200','200','200','250']"
+                                data-whitespace="nowrap"
+
+                                data-type="shape"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:50px;opacity:0;","speed":2000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 13;"> </div>
+
+                            <!-- LAYER NR. 10 -->
+                            <a class="tp-caption   tp-resizeme" href="#" target="_self"          id="slide-43-layer-1"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['90','111','119','140']"
+                                data-fontsize="['40','40','25','20']"
+                                data-lineheight="['40','40','25','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-actions=''
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 14; min-width: 580px; max-width: 580px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 500; color: rgba(255,255,255,1);font-family:Roboto;text-decoration: none;">Going in Deep </a>
+
+                            <!-- LAYER NR. 11 -->
+                            <div class="tp-caption   tp-resizeme"
+                                 id="slide-43-layer-3"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['35','35','20','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":400,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 15; min-width: 580px; max-width: 580px; white-space: normal; font-size: 15px; line-height: 20px; font-weight: 500; color: rgba(255,255,255,0.75);font-family:Roboto;">To have faith is to trust yourself to the water. When you swim you don't grab hold of the water, because if you do you will sink and drown. Instead you relax, and float. </div>
+
+                            <!-- LAYER NR. 12 -->
+                            <div class="tp-caption   tp-resizeme tp-svg-layer"
+                                 id="slide-43-layer-4"
+                                 data-x="['left','left','left','left']" data-hoffset="['721','620','510','367']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['29','29','9','16']"
+                                data-width="50"
+                                data-height="50"
+                                data-whitespace="nowrap"
+                                data-visibility="['on','on','off','off']"
+
+                                data-type="svg"
+                                data-actions='[{"event":"click","action":"togglefullscreen","delay":""}]'
+                                data-svg_src="assets/vendor/revolution-slider/assets/images/ic_fullscreen_36px.svg"
+                                data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-svg_hover="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":600,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"150","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 16; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; color: rgba(255,255,255,0.50);cursor:pointer;"><div class="rs-untoggled-content"> </div><div class="rs-toggled-content"></div></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-44" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="assets/vendor/revolution-slider/assets/images/art8-120x120.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Galactic Oneness" data-param1="Nightsky" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/vendor/revolution-slider/assets/images/dummy_2.png"  alt=""  data-lazyload="assets/vendor/revolution-slider/assets/images/art8.jpg" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 13 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  tp-gradientstyle"
+                                 id="slide-44-layer-2"
+                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                                data-width="full"
+                                data-height="['200','200','200','250']"
+                                data-whitespace="nowrap"
+
+                                data-type="shape"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:50px;opacity:0;","speed":2000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 17;"> </div>
+
+                            <!-- LAYER NR. 14 -->
+                            <a class="tp-caption   tp-resizeme" href="#" target="_self"          id="slide-44-layer-1"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['111','111','119','140']"
+                                data-fontsize="['40','40','25','20']"
+                                data-lineheight="['40','40','25','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-actions=''
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 18; min-width: 580px; max-width: 580px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 500; color: rgba(255,255,255,1);font-family:Roboto;text-decoration: none;">Galactic Oneness </a>
+
+                            <!-- LAYER NR. 15 -->
+                            <div class="tp-caption   tp-resizeme"
+                                 id="slide-44-layer-3"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['35','35','20','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":400,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 19; min-width: 580px; max-width: 580px; white-space: normal; font-size: 15px; line-height: 20px; font-weight: 500; color: rgba(255,255,255,0.75);font-family:Roboto;">Things are as they are. Looking out into it the universe at night, we make no comparisons between right and wrong stars, nor between well and badly arranged constellations. </div>
+
+                            <!-- LAYER NR. 16 -->
+                            <div class="tp-caption   tp-resizeme tp-svg-layer"
+                                 id="slide-44-layer-4"
+                                 data-x="['left','left','left','left']" data-hoffset="['721','620','510','367']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['29','29','9','16']"
+                                data-width="50"
+                                data-height="50"
+                                data-whitespace="nowrap"
+                                data-visibility="['on','on','off','off']"
+
+                                data-type="svg"
+                                data-actions='[{"event":"click","action":"togglefullscreen","delay":""}]'
+                                data-svg_src="assets/vendor/revolution-slider/assets/images/ic_fullscreen_36px.svg"
+                                data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-svg_hover="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":600,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"150","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 20; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; color: rgba(255,255,255,0.50);cursor:pointer;"><div class="rs-untoggled-content"> </div><div class="rs-toggled-content"></div></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-45" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="assets/vendor/revolution-slider/assets/images/sunshinecover-120x120.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Wonderful Sunrise" data-param1="HTML5 Video" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/vendor/revolution-slider/assets/images/dummy_2.png"  alt=""  data-lazyload="assets/vendor/revolution-slider/assets/images/sunshinecover.jpg" data-bgposition="center center" data-bgfit="cover" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- BACKGROUND VIDEO LAYER -->
+                            <div class="rs-background-video-layer"
+                                data-forcerewind="on"
+                                data-volume="mute"
+                                data-videowidth="100%"
+                                data-videoheight="100%"
+                                data-videomp4="assets/vendor/revolution-slider/assets/videos/sunrise.mp4"
+                                data-videopreload="auto"
+                                data-videoloop="loopandnoslidestop"
+                                data-forceCover="1"
+                                data-aspectratio="16:9"
+                                data-autoplay="true"
+                                data-autoplayonlyfirsttime="false" ></div>
+
+                            <!-- LAYER NR. 17 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  tp-gradientstyle"
+                                 id="slide-45-layer-2"
+                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                                data-width="full"
+                                data-height="['200','200','200','250']"
+                                data-whitespace="nowrap"
+
+                                data-type="shape"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:50px;opacity:0;","speed":2000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 21;"> </div>
+
+                            <!-- LAYER NR. 18 -->
+                            <a class="tp-caption   tp-resizeme"
+                                href="#" target="_self"          id="slide-45-layer-1"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['91','91','99','100']"
+                                data-fontsize="['40','40','25','20']"
+                                data-lineheight="['40','40','25','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-actions=''
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 22; min-width: 580px; max-width: 580px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 500; color: rgba(255,255,255,1);font-family:Roboto;text-decoration: none;">Wonderful Sunrise </a>
+
+                            <!-- LAYER NR. 19 -->
+                            <div class="tp-caption   tp-resizeme"
+                                 id="slide-45-layer-3"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['35','35','20','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":400,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 23; min-width: 580px; max-width: 580px; white-space: normal; font-size: 15px; line-height: 20px; font-weight: 500; color: rgba(255,255,255,0.75);font-family:Roboto;">You and I are all as much continuous with the physical universe as a wave is continuous with the ocean.  </div>
+
+                            <!-- LAYER NR. 20 -->
+                            <div class="tp-caption   tp-resizeme tp-svg-layer"
+                                 id="slide-45-layer-4"
+                                 data-x="['left','left','left','left']" data-hoffset="['721','620','510','367']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['29','29','9','16']"
+                                data-width="50"
+                                data-height="50"
+                                data-whitespace="nowrap"
+                                data-visibility="['on','on','off','off']"
+
+                                data-type="svg"
+                                data-actions='[{"event":"click","action":"togglefullscreen","delay":""}]'
+                                data-svg_src="assets/vendor/revolution-slider/assets/images/ic_fullscreen_36px.svg"
+                                data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-svg_hover="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":600,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"150","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 24; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; color: rgba(255,255,255,0.50);cursor:pointer;"><div class="rs-untoggled-content"> </div><div class="rs-toggled-content"></div></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-46" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="assets/vendor/revolution-slider/assets/images/art7-120x120.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Vast Deserts" data-param1="Traveling" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/vendor/revolution-slider/assets/images/dummy_2.png"  alt=""  data-lazyload="assets/vendor/revolution-slider/assets/images/art7.jpg" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 21 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  tp-gradientstyle"
+                                 id="slide-46-layer-2"
+                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
+                                data-width="full"
+                                data-height="['200','200','200','250']"
+                                data-whitespace="nowrap"
+
+                                data-type="shape"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:50px;opacity:0;","speed":2000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 25;"> </div>
+
+                            <!-- LAYER NR. 22 -->
+                            <a class="tp-caption   tp-resizeme"
+                                href="#" target="_self"          id="slide-46-layer-1"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['91','91','79','100']"
+                                data-fontsize="['40','40','25','20']"
+                                data-lineheight="['40','40','25','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-actions=''
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":200,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 26; min-width: 580px; max-width: 580px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 500; color: rgba(255,255,255,1);font-family:Roboto;text-decoration: none;">Vast Deserts </a>
+
+                            <!-- LAYER NR. 23 -->
+                            <div class="tp-caption   tp-resizeme"
+                                 id="slide-46-layer-3"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','30','20']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['35','35','20','20']"
+                                data-width="['580','480','340','260']"
+                                data-height="none"
+                                data-whitespace="normal"
+
+                                data-type="text"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":400,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 27; min-width: 580px; max-width: 580px; white-space: normal; font-size: 15px; line-height: 20px; font-weight: 500; color: rgba(255,255,255,0.75);font-family:Roboto;">But the attitude of faith is to let go, and become open to truth, whatever it might turn out to be.  </div>
+
+                            <!-- LAYER NR. 24 -->
+                            <div class="tp-caption   tp-resizeme tp-svg-layer"
+                                 id="slide-46-layer-4"
+                                 data-x="['left','left','left','left']" data-hoffset="['721','620','510','367']"
+                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['29','29','9','16']"
+                                data-width="50"
+                                data-height="50"
+                                data-whitespace="nowrap"
+                                data-visibility="['on','on','off','off']"
+
+                                data-type="svg"
+                                data-actions='[{"event":"click","action":"togglefullscreen","delay":""}]'
+                                data-svg_src="assets/vendor/revolution-slider/assets/images/ic_fullscreen_36px.svg"
+                                data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-svg_hover="sc:transparent;sw:0;sda:0;sdo:0;"
+                                data-basealign="slide"
+                                data-responsive_offset="on"
+
+                                data-frames='[{"from":"y:20px;opacity:0;","speed":2000,"to":"o:1;","delay":600,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"150","ease":"Power2.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 28; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; color: rgba(255,255,255,0.50);cursor:pointer;"><div class="rs-untoggled-content"> </div><div class="rs-toggled-content"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tp-bannertimer" style="height: 8px; background: rgba(255,255,255,0.25);"></div>
+                </div>
+            </div><!-- END REVOLUTION SLIDER -->
+        </section>
+        <!--slider end-->
+
+        <!--start-->
+        <section class="u-PaddingTop90 u-PaddingBottom90 u-xs-PaddingTop0 u-xs-PaddingBottom10">
+            <div class="container">
+                <div class="row u-MarginTop60">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                        <h1 class="text-uppercase u-MarginTop0 u-MarginBottom35">This is Heading Style</h1>
+                        <div class="Split u-MarginBottom30"></div>
+                        <p class="u-LineHeight2 u-PaddingLeft15 u-PaddingRight15">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
+                </div>
+                <div class="row u-MarginTop60">
+                    <div class="col-md-4 col-sm-6 u-MarginBottom60">
+                        <div class="u-PaddingRight40 u-md-Padding0 u-sm-PaddingRight20 u-xs-PaddingLeft20">
+                            <div class="Blurb">
+                                <span class="u-Weight300 u-FontSize75 text-muted u-Opacity20">01</span>
+                                <h4 class="Blurb__hoverText u-MarginTop10 text-uppercase">What We Do</h4>
+                                <p class="u-LineHeight2">This one is a big one that has been haunting me since teenage years. When I was in highschool beginning of Uversity.</p>
+                                <p class="u-MarginTop25">
+                                    <a class="btn-go" href="#" role="button">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 u-MarginBottom60">
+                        <div class="u-PaddingLeft20 u-PaddingRight20 u-md-Padding0 u-sm-PaddingLeft20 u-xs-PaddingRight20">
+                            <div class="Blurb">
+                                <span class="u-Weight300 u-FontSize75 text-muted u-Opacity20">02</span>
+                                <h4 class="Blurb__hoverText u-MarginTop10 text-uppercase">What We Do</h4>
+                                <p class="u-LineHeight2">This one is a big one that has been haunting me since teenage years. When I was in highschool beginning of Uversity.</p>
+                                <p class="u-MarginTop25">
+                                    <a class="btn-go" href="#" role="button">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 u-MarginBottom60">
+                        <div class="u-PaddingLeft40 u-md-Padding0 u-sm-PaddingLeft10 u-sm-PaddingRight10 u-xs-PaddingLeft20 u-xs-PaddingRight20">
+                            <div class="Blurb">
+                                <span class="u-Weight300 u-FontSize75 text-muted u-Opacity20">03</span>
+                                <h4 class="Blurb__hoverText u-MarginTop10 text-uppercase">What We Do</h4>
+                                <p class="u-LineHeight2">This one is a big one that has been haunting me since teenage years. When I was in highschool beginning of Uversity.</p>
+                                <p class="u-MarginTop25">
+                                    <a class="btn-go" href="#" role="button">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end-->
+
+        <!--footer start-->
+        <footer class="bg-darker u-PaddingTop55 u-PaddingBottom55">
+            <div class="container text-center text-sm">
+                <ul class="list-inline text-paragraph u-MarginBottom20 u-LineHeight2">
+                    <li><a href="#">Facebook</a></li>
+                    <li>|</li>
+                    <li><a href="">Twitter</a></li>
+                    <li>|</li>
+                    <li><a href="">Google Plus</a></li>
+                    <li>|</li>
+                    <li><a href="">Fan Page</a></li>
+                    <li>|</li>
+                    <li><a href="">Mail Us</a></li>
+                    <li>|</li>
+                    <li><a href="">English</a></li>
+                </ul>
+                <p class=" u-MarginBottom5">Copyright 2017 @ Alien Template.</p>
+            </div>
+        </footer>
+        <!--footer end-->
+
+        <!-- inject:js -->
+        <script src="assets/vendor/jquery/jquery-1.12.0.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/vendor/bootsnav/js/bootsnav.js"></script>
+        <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/vendor/jquery.countTo/jquery.countTo.min.js"></script>
+        <script src="assets/vendor/owl.carousel2/owl.carousel.min.js"></script>
+        <script src="assets/vendor/jquery.appear/jquery.appear.js"></script>
+        <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/imagesloaded/imagesloaded.js"></script>
+        <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="assets/vendor/switchery/switchery.min.js"></script>
+        <script src="assets/vendor/swiper/js/swiper.min.js"></script>
+        <script src="assets/js/alien.js"></script>
+        <!-- endinject -->
+
+        <!-- revolution JS -->
+        <script src="assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- SLICEY ADD-ON FILES -->
+        <script src="assets/vendor/revolution-slider/revolution-addons/slicey/js/revolution.addon.slicey.min.js?ver=1.0.0"></script>
+
+        <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+        <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+        <script type="text/javascript">
+            var tpj=jQuery;
+            var revapi18;
+            tpj(document).ready(function() {
+                if(tpj("#rev_slider_18_1").revolution == undefined){
+                    revslider_showDoubleJqueryError("#rev_slider_18_1");
+                }else{
+                    revapi18 = tpj("#rev_slider_18_1").show().revolution({
+                        sliderType:"carousel",
+                        jsFileLocation:"revolution/js/",
+                        sliderLayout:"fullwidth",
+                        dottedOverlay:"none",
+                        delay:9000,
+                        navigation: {
+                            keyboardNavigation:"off",
+                            keyboard_direction: "horizontal",
+                            mouseScrollNavigation:"off",
+                            mouseScrollReverse:"default",
+                            onHoverStop:"on",
+                            thumbnails: {
+                                style:"gyges",
+                                enable:true,
+                                width:50,
+                                height:50,
+                                min_width:50,
+                                wrapper_padding:5,
+                                wrapper_color:"transparent",
+                                tmp:'<span class="tp-thumb-img-wrap">  <span class="tp-thumb-image"></span></span>',
+                                visibleAmount:5,
+                                hide_onmobile:false,
+                                hide_over:1240,
+                                hide_onleave:false,
+                                direction:"horizontal",
+                                span:false,
+                                position:"inner",
+                                space:5,
+                                h_align:"center",
+                                v_align:"top",
+                                h_offset:0,
+                                v_offset:20
+                            }
+                            ,
+                            tabs: {
+                                style:"gyges",
+                                enable:true,
+                                width:220,
+                                height:80,
+                                min_width:220,
+                                wrapper_padding:0,
+                                wrapper_color:"transparent",
+                                tmp:'<div class="tp-tab-content">  <span class="tp-tab-date">{{param1}}</span>  <span class="tp-tab-title">{{title}}</span></div><div class="tp-tab-image"></div>',
+                                visibleAmount: 6,
+                                hide_onmobile: true,
+                                hide_under:1240,
+                                hide_onleave:false,
+                                hide_delay:200,
+                                direction:"vertical",
+                                span:true,
+                                position:"inner",
+                                space:0,
+                                h_align:"left",
+                                v_align:"center",
+                                h_offset:0,
+                                v_offset:0
+                            }
+                        },
+                        carousel: {
+                            horizontal_align: "center",
+                            vertical_align: "center",
+                            fadeout: "off",
+                            maxVisibleItems: 5,
+                            infinity: "on",
+                            space: 0,
+                            stretch: "off",
+                            showLayersAllTime: "off",
+                            easing: "Power3.easeInOut",
+                            speed: "800"
+                        },
+                        responsiveLevels:[1240,1024,778,480],
+                        visibilityLevels:[1240,1024,778,480],
+                        gridwidth:[800,700,400,300],
+                        gridheight:[600,600,500,400],
+                        lazyType:"single",
+                        shadow:0,
+                        spinner:"off",
+                        stopLoop:"off",
+                        stopAfterLoops:-1,
+                        stopAtSlide:-1,
+                        shuffle:"off",
+                        autoHeight:"off",
+                        hideThumbsOnMobile:"off",
+                        hideSliderAtLimit:0,
+                        hideCaptionAtLimit:0,
+                        hideAllCaptionAtLilmit:0,
+                        debugMode:false,
+                        fallbacks: {
+                            simplifyAll:"off",
+                            nextSlideOnWindowFocus:"off",
+                            disableFocusListener:false,
+                        }
+                    });
+                }
+            });
+        </script>
+
+        <script src="assets/vendor/revolution-slider/assets/warning.js"></script>
+    </body>
+</html>

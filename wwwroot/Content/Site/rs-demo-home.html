@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html class="html">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png" />
+
+        <title>Slider Revolution 5</title>
+
+        <meta name="description" content="Slider Revolution Example" />
+        <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+        <meta name="author" content="ThemePunch" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:100%7COpen+Sans:300,400,400i,600,700,800">
+        <!-- inject:css -->
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/vendor/bootsnav/css/bootsnav.css">
+        <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/vendor/alien-icon/css/style.css">
+        <link rel="stylesheet" href="assets/vendor/owl.carousel2/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="assets/vendor/switchery/switchery.min.css">
+        <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+        <link rel="stylesheet" href="assets/vendor/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="assets/css/alien.min.css">
+        <!-- endinject -->
+
+        <!-- revolution css -->
+        <link rel="stylesheet" href="assets/vendor/revolution-slider/revolution/fonts/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="assets/vendor/revolution-slider/assets/css/noneed.css">
+    </head>
+    <body>
+        <!--header start-->
+        <header>
+            <!-- Start Navigation -->
+            <nav id="mainNav" class="navbar navbar-default navbar-fixed bootsnav">
+
+                <!-- Start Top Search -->
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top Search -->
+
+                <div class="container">
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+                                    <i class="fa fa-shopping-bag"></i>
+                                    <span class="badge">3</span>
+                                </a>
+                                <ul class="dropdown-menu cart-list">
+                                    <li>
+                                        <a href="#" class="photo"><img src="assets/imgs/cart-1.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Delica omtantur </a></h6>
+                                        <p>2x - <span class="price">$99.99</span></p>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="photo"><img src="assets/imgs/cart-2.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Omnes ocurreret</a></h6>
+                                        <p>1x - <span class="price">$33.33</span></p>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="photo"><img src="assets/imgs/cart-3.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Agam facilisis</a></h6>
+                                        <p>2x - <span class="price">$99.99</span></p>
+                                    </li>
+                                    <li class="total">
+                                        <span class="pull-right"><strong>Total</strong>: $0.00</span>
+                                        <a href="#" class="btn btn-default btn-cart">Cart</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Atribute Navigation -->
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="./index.html"><img src="assets/imgs/logo.png" class="logo logo-scrolled" alt=""></a>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="" data-out="">
+                            <li class="dropdown">
+                                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" >Home</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Agency</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-agency1.html">Agency 1</a></li>
+                                            <li><a href="mp-agency2.html">Agency 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Specialized</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-fashion.html">Fashion</a></li>
+                                            <li><a href="mp-education.html">Education</a></li>
+                                            <li><a href="mp-interior.html">Interior</a></li>
+                                            <li><a href="mp-car.html">Car Dealer</a></li>
+                                            <li><a href="mp-resume.html">Resume/CV</a></li>
+                                            <li><a href="mp-restaurant.html">Restaurant</a></li>
+                                            <li><a href="mp-startup2.html">Startup</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Business</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-business1.html">Business 1</a></li>
+                                            <li><a href="mp-business2.html">Business 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >General</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-general.html">General 1</a></li>
+                                            <li><a href="mp-general2.html">General 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="mp-corporate1.html">Corporate</a></li>
+                                    <li><a href="mp-creative2.html">Creative</a></li>
+                                    <li><a href="shop-3.html">E-Commerce</a></li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Portfolio</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-portfolio1.html">Portfolio 1</a></li>
+                                            <li><a href="mp-portfolio2.html">Portfolio 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Photography</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="mp-photography1.html">Photography 1</a></li>
+                                            <li><a href="mp-photography2.html">Photography 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="blog-classic.html">Blog Classic</a></li>
+                                            <li><a href="blog-classic-2.html">Blog Classic 2</a></li>
+                                            <li><a href="blog-single.html">Blog Standard</a></li>
+                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="mp-parallax.html">Parallax</a></li>
+                                    <li><a href="mp-app-landing.html">App Landing</a></li>
+                                    <li><a class="ScrollTo" href="#onepage">One Pages Demo</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown megamenu-fw">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <ul class="dropdown-menu megamenu-content" role="menu">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-menu col-md-3">
+                                                <h6 class="title">Title Menu One</h6>
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="about-me.html">About Me</a></li>
+                                                        <li><a href="about-us-1.html">About Us 1</a></li>
+                                                        <li><a href="about-us-2.html">About Us 2</a></li>
+                                                        <li><a href="service-1.html">Services 1</a></li>
+                                                        <li><a href="service-2.html">Services 2</a></li>
+                                                        <li><a href="career.html">Career</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                            <div class="col-menu col-md-3">
+                                                <h6 class="title">Title Menu Two</h6>
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="team-1.html">Our Team 1</a></li>
+                                                        <li><a href="team-2.html">Our Team 2</a></li>
+                                                        <li><a href="faq-1.html">FAQ 1</a></li>
+                                                        <li><a href="faq-2.html">FAQ 2</a></li>
+                                                        <li><a href="404.html">404 Error</a></li>
+                                                        <li><a href="rs-demo-404-ErrorPage.html">404 Error Alt</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                            <div class="col-menu col-md-3">
+                                                <h6 class="title">Title Menu Three</h6>
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="pricing-table-1.html">Pricing Table 1</a></li>
+                                                        <li><a href="pricing-table-2.html">Pricing Table 2</a></li>
+                                                        <li><a href="contact-us-1.html">Contact Us 1</a></li>
+                                                        <li><a href="contact-us-2.html">Contact Us 2</a></li>
+                                                        <li><a href="contact-us-3.html">Contact Us 3</a></li>
+                                                        <li><a href="rs-demo-coming-soon.html">Coming Soon</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-menu col-md-3">
+                                                <h6 class="title">Title Menu Four</h6>
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="rs-demo-ComingSoon2.html">Coming Soon Alt</a></li>
+                                                        <li><a href="maintenance.html">Maintenance</a></li>
+                                                        <li><a href="login-1.html">Login 1</a></li>
+                                                        <li><a href="login-2.html">Login/Registration 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                        </div><!-- end row -->
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Features</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Navbar</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="nav-default.html">Nav Befault</a></li>
+                                            <li><a href="nav-brand-center.html">Nav Brand Center</a></li>
+                                            <li><a href="nav-brand-center-alt.html">Nav Brand Center alt</a></li>
+                                            <li><a href="nav-brand-top.html">Nav Brand Top</a></li>
+                                            <li><a href="nav-menu-left.html">Nav Left Align</a></li>
+                                            <li><a href="nav-menu-attr.html">Nav Attr</a></li>
+                                            <li><a href="nav-full.html">Nav Fullscreen </a></li>
+                                            <li><a href="nav-sidebar.html">Nav Sidebar </a></li>
+                                            <li><a href="nav-bottom.html">Nav Bottom</a></li>
+                                            <li><a href="nav-scrollspy.html">Nav Scrollspy</a></li>
+                                            <li><a href="nav-scrollspy-sidebar.html">Nav Scrollspy Sidebar</a></li>
+                                            <li><a href="nav-transparent-with-white-border.html">Nav Trans..Border</a></li>
+                                            <li><a href="nav-transparent-dark-link.html">Nav Trans.. Dark Link</a></li>
+                                            <li><a href="nav-semi-transparent-light.html">Nav Semi Trans.. Light</a></li>
+                                            <li><a href="nav-semi-transparent-dark.html">Nav Semi Trans.. Dark</a></li>
+                                            <li><a href="nav-black.html">Navbar Black</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Sliders Banner</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="sc-slider_full_screen.html">Slider Full Screen</a></li>
+                                            <li><a href="sc-slider_full_width.html">Slider Full Width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="rs-demo-home.html">Slider Revolution</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Parallax Banner</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="sc-banner_1.html">Banner 1</a></li>
+                                            <li><a href="sc-banner_2.html">Banner 2</a></li>
+                                            <li><a href="sc-banner_3.html">Banner 3</a></li>
+                                            <li><a href="sc-banner_4.html">Banner 4</a></li>
+                                            <li><a href="sc-banner_5.html">Banner 5</a></li>
+                                            <li><a href="sc-banner_6.html">Banner 6</a></li>
+                                            <li><a href="sc-banner_7.html">Banner 7</a></li>
+                                            <li><a href="sc-banner_8.html">Banner 8</a></li>
+                                            <li><a href="sc-banner_9.html">Banner 9</a></li>
+                                            <li><a href="sc-banner_10.html">Banner 10</a></li>
+                                            <li><a href="sc-banner_11.html">Banner 11</a></li>
+                                            <li><a href="sc-banner_12.html">Banner 12</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="sc-page_title.html">Page Title Variations</a></li>
+                                    <li><a href="sc-footers.html">Footer Variations</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Portfolio</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Grid Portfolio</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="portfolio-grid-2.html">Grid 2</a></li>
+                                            <li><a href="portfolio-grid-3.html">Grid 3</a></li>
+                                            <li><a href="portfolio-grid-4.html">Grid 4</a></li>
+                                            <li><a href="portfolio-grid-5.html">Grid 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Grid with Title</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="portfolio-grid-title-1.html">Grid 1</a></li>
+                                            <li><a href="portfolio-grid-title-2.html">Grid 2</a></li>
+                                            <li><a href="portfolio-grid-title-3.html">Grid 3</a></li>
+                                            <li><a href="portfolio-grid-title-4.html">Grid 4</a></li>
+                                            <li><a href="portfolio-grid-title-5.html">Grid 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Masonry Portfolio</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="portfolio-masonry-2.html">Masonry 2</a></li>
+                                            <li><a href="portfolio-masonry-3.html">Masonry 3</a></li>
+                                            <li><a href="portfolio-masonry-4.html">Masonry 4</a></li>
+                                            <li><a href="portfolio-masonry-5.html">Masonry 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Masonry with Title</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="portfolio-masonry-title-2.html">Masonry 2</a></li>
+                                            <li><a href="portfolio-masonry-title-3.html">Masonry 3</a></li>
+                                            <li><a href="portfolio-masonry-title-4.html">Masonry 4</a></li>
+                                            <li><a href="portfolio-masonry-title-5.html">Masonry 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio-masonry-special.html">Masonry Special</a></li>
+                                    <li><a href="portfolio-masonry-special-alt.html">Masonry Special Alt</a></li>
+                                    <li><a href="portfolio-details-1.html">Portfolio Details 1</a></li>
+                                    <li><a href="portfolio-details-2.html">Portfolio Details 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown megamenu-fw">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shortcodes</a>
+                                <ul class="dropdown-menu megamenu-content" role="menu">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-menu col-md-3">
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="sc-accordion.html">Accordion/Toggle</a></li>
+                                                        <li><a href="sc-alerts.html">Alerts</a></li>
+                                                        <li><a href="sc-blurb.html">Blurb</a></li>
+                                                        <li><a href="sc-buttons.html">Buttons</a></li>
+                                                        <li><a href="sc-bullets.html">Bullets</a></li>
+                                                        <li><a href="sc-blogs.html">Blog Post</a></li>
+                                                        <li><a href="sc-carousel.html">Carousel</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                            <div class="col-menu col-md-3">
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="sc-clients.html">Clients</a></li>
+                                                        <li><a href="sc-custom_line_icons.html">Custom Line Icons</a></li>
+                                                        <li><a href="sc-form.html">Forms</a></li>
+                                                        <li><a href="sc-fun_factors.html">Fun Factors</a></li>
+                                                        <li><a href="sc-heading.html">Heading</a></li>
+                                                        <li><a href="sc-image_post.html">Image Post</a></li>
+                                                        <li><a href="sc-parallax.html">Parallax</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                            <div class="col-menu col-md-3">
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="sc-price_tables.html">Price Tables</a></li>
+                                                        <li><a href="sc-progress_bar.html">Progress Bar</a></li>
+                                                        <li><a href="sc-promo.html">Promotional</a></li>
+                                                        <li><a href="sc-social-links.html">Social Links</a></li>
+                                                        <li><a href="sc-steps.html">Steps</a></li>
+                                                        <li><a href="sc-subscribe.html">Subscriptions</a></li>
+                                                        <li><a href="sc-tabs.html">Tabs</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-menu col-md-3">
+                                                <div class="content">
+                                                    <ul class="menu-col">
+                                                        <li><a href="sc-team.html">Team Members</a></li>
+                                                        <li><a href="sc-testimonials.html">Testimonials</a></li>
+                                                        <li><a href="sc-timeline.html">Timeline</a></li>
+                                                         <li><a href="http://bicon.lab.themebucket.net/" target=“_blank”>Line Icon Pack <small class="label label-primary"> Free</small> </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col-3 -->
+                                        </div><!-- end row -->
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Shop</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shop-2.html">Shop Grid 2</a></li>
+                                    <li><a href="shop-3.html">Shop Grid 3</a></li>
+                                    <li><a href="shop-4.html">Shop Grid 4</a></li>
+                                    <li><a href="shop-single.html">Product Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-left">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog-classic.html">Blog Classic 1</a></li>
+                                    <li><a href="blog-classic-2.html">Blog Classic 2</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog Standard</a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                            <li><a href="blog-single.html">Blog Centered</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog Details </a>
+                                        <ul class="dropdown-menu right">
+                                            <li><a href="blog-details-left-sidebar.html">Details Left Sidebar</a></li>
+                                            <li><a href="blog-details-right-sidebar.html">Details Right Sidebar</a></li>
+                                            <li><a href="blog-details-centered.html">Details Centered</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+
+                <!-- Start Side Menu -->
+                <div class="side">
+                    <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                    <div class="widget">
+                        <h5 class="title">Custom Pages</h5>
+                        <ul class="link">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h5 class="title">About Us</h5>
+                        <p class="light-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae dicta nulla odit, pariatur
+                            quas saepe similique. Accusantium, ad consectetur eius ex facere neque nobis numquam, placeat
+                            quibusdam repellendus tempora?</p>
+                    </div>
+                    <div class="widget">
+                        <h5 class="title">Social Links</h5>
+                        <div class="social-links sl-default border-link round-link colored-link">
+                            <a href="#" class="facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="g-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#" class="youtube">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                            <a href="#" class="dribbble">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+                            <a href="#" class="behance">
+                                <i class="fa fa-behance"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Side Menu -->
+            </nav>
+            <!-- End Navigation -->
+            <div class="clearfix"></div>
+        </header>
+        <!--header end-->
+
+        <section class="u-PaddingTop100 u-PaddingBottom100">
+            <div class="container text-center">
+                <!--<i class="fa-icon-refresh tp-headicon"></i>-->
+                <h1 class="u-MarginTop0 u-MarginBottom30 u-Weight700">Lets see Slider Revolution in Action</h1>
+                <p class="u-MarginBottom50">All example sliders you find below are included with the download of the Slider Revolution 5.0 Plugin.<br>Oh, and it also comes with all assets like images and videos. Browse the Examples Folder through to find your favorite Example. Duplicate it and just start to build your own Slider based on our examples!</p>
+                <a class="btn btn-lg btn-primary" href="https://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/" target="_blank">See Online Documentation</a>
+            </div>
+        </section>
+
+        <section class="example-table">
+            <div class="filter">
+                <ul>
+                    <li data-filter="filterall">All Example</li>
+                    <li data-filter="filterDDD">3D</li>
+                    <li data-filter="filterLandingPage">Landing Page</li>
+                    <li data-filter="filterSlider">Slider</li>
+                    <li data-filter="filterHero">Hero Scene</li>
+                    <li data-filter="filterTimer">Timer</li>
+                    <li data-filter="filterCarousel">Carousel</li>
+                    <li data-filter="filterAuto">Auto-Size</li>
+                    <li data-filter="filterFullwidth">Full-Width</li>
+                    <li data-filter="filterFullscreen">Full-Screen</li>
+                    <li data-filter="filterTabs">Tabs</li>
+                    <li data-filter="filterScroll">Scroll Navigation</li>
+                    <li data-filter="filterMenu">Menu Navigation</li>
+                    <li data-filter="filterFront">Front Page</li>
+                    <li data-filter="filterSpecial">Special Content</li>
+                    <li data-filter="filterParallax">Parallax</li>
+                    <li data-filter="filterHTML5">HTML5 Video</li>
+                    <li data-filter="filterYouTube">YouTube Video</li>
+                    <li data-filter="filterVimeo">Vimeo Video</li>
+                </ul>
+            </div>
+            <div class="example-list">
+
+                <a target="_blank" href="rs-demo-ParallaxZoomSlices.html" class="img-wrapper filterall filterParallax filterFullscreen filterSlider filterTimer filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/parallax_zoom_slices.jpg"><div class="hover-cover">Parallax Zoom Slides</div></a>
+                <a target="_blank" href="rs-demo-MaskShowcase.html" class="img-wrapper filterall filterFullscreen filterSlider filterTimer"><img src="assets/vendor/revolution-slider/assets/gridimages/mask_showcase.jpg"><div class="hover-cover">Mask Showcase</div></a>
+
+                <a target="_blank" href="rs-demo-WebsiteIntro.html" class="img-wrapper filterall filterFullscreen filterSlider filterTimer filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/website_intro.jpg"><div class="hover-cover">Website Intro</div></a>
+
+                <a target="_blank" href="rs-demo-SpaceOpera.html" class="img-wrapper filterall filterFullscreen filterSlider"><img src="assets/vendor/revolution-slider/assets/gridimages/space_opera.jpg"><div class="hover-cover">Space Opera</div></a>
+
+                <a target="_blank" href="rs-demo-FilmStrip.html" class="img-wrapper filterall filterFullwidth filterSlider filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/filmstrip_effect.jpg"><div class="hover-cover">Filmstrip</div></a>
+
+                <a target="_blank" href="rs-demo-CarouselGallery.html" class="img-wrapper filterall filterFullwidth filterSlider filterCarousel filterTabs"><img src="assets/vendor/revolution-slider/assets/gridimages/carousel_gallery.jpg"><div class="hover-cover">Carousel Gallery</div></a>
+
+                <a target="_blank" href="rs-demo-404-ErrorPage.html" class="img-wrapper filterall filterFullscreen filterParallax filterHero"><img src="assets/vendor/revolution-slider/assets/gridimages/404_error_page.jpg"><div class="hover-cover">404 Error Page</div></a>
+
+                <a target="_blank" href="rs-demo-GravityDesign.html" class="img-wrapper filterall filterFullscreen filterParallax filterHero filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/gravity_design.jpg"><div class="hover-cover">Gravity Design</div></a>
+
+                <a target="_blank" href="rs-demo-AppShowcase.html" class="img-wrapper filterall filterFullscreen filterHero filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/app_showcase.jpg"><div class="hover-cover">App Showcase</div></a>
+
+                <a target="_blank" href="rs-demo-PortfolioViewer.html" class="img-wrapper filterall filterFullscreen filterSlider filterMenu filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/portfolio_viewer.jpg"><div class="hover-cover">Portfolio View</div></a>
+
+                <a target="_blank" href="rs-demo-ParticleEffectThree.html" class="img-wrapper filterall filterFullscreen filterHero filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/particle-effect-three.jpg"><div class="hover-cover">Particle Effect Three</div></a>
+
+                <a target="_blank" href="rs-demo-ParticleEffectTwo.html" class="img-wrapper filterall filterFullscreen filterHero filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/particle_effect_two.jpg"><div class="hover-cover">Particle Effect Two</div></a>
+
+                <a target="_blank" href="rs-demo-ParticleEffectOne.html" class="img-wrapper filterall filterFullscreen filterSlider filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/particle_effect_one.jpg"><div class="hover-cover">Particle Effect One</div></a>
+
+
+
+                <a target="_blank" href="rs-demo-HappyHolidays.html" class="img-wrapper filterall filterSlider filterFullscreen filterParallax filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/HappyHolidays.jpg"><div class="hover-cover">Happy Holidays</div></a>
+                <a target="_blank" href="rs-demo-NiceAndClean.html" class="img-wrapper filterall filterSlider filterFullscreen filterParallax filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/NiceAndClean.jpg"><div class="hover-cover">Nice And Clean Template</div></a>
+                <a target="_blank" href="rs-demo-80sStyleIntro.html" class="img-wrapper filterall filterSlider filterFullscreen filterParallax filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/80sStyleIntro.jpg"><div class="hover-cover">80's Style Intro</div></a>
+                <a target="_blank" href="rs-demo-BlurEffectSlider.html" class="img-wrapper filterall filterSlider filterFullscreen filterParallax filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/BlurEffectSlider.jpg"><div class="hover-cover">Blur Effect Slider</div></a>
+                <a target="_blank" href="rs-demo-ComingSoon2.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/ComingSoon2.jpg"><div class="hover-cover">Coming Soon</div></a>
+
+                <a target="_blank" href="rs-demo-themeplicity.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/themeplicity.jpg"><div class="hover-cover">Themeplicity</div></a>
+                <a target="_blank" href="rs-demo-blend_mode.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/blendmode.jpg"><div class="hover-cover">Blend Mode</div></a>
+                <a target="_blank" href="rs-demo-webagency.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/webagency.jpg"><div class="hover-cover">Web Agency</div></a>
+                <a target="_blank" href="rs-demo-minimal_website.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/minimal_website.jpg"><div class="hover-cover">Minimal Website</div></a>
+                <a target="_blank" href="rs-demo-duotone.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/duotone.jpg"><div class="hover-cover">Duo Tone</div></a>
+                <a target="_blank" href="rs-demo-exploration_header.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/exploration_header.jpg"><div class="hover-cover">Exploration Header</div></a>
+                <a target="_blank" href="rs-demo-inspiration_header.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/inspiration_header.jpg"><div class="hover-cover">Inspiration Header</div></a>
+                <a target="_blank" href="rs-demo-magazine_posts.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/magazine_posts.jpg"><div class="hover-cover">Magazine Posts</div></a>
+                <a target="_blank" href="rs-demo-focus-parallax.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterMenu filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/focus_parallax.jpg"><div class="hover-cover">Focus Parallax</div></a>
+                <a target="_blank" href="rs-demo-website-builder.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterMenu filterParallax filterLandingPage filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/websitebuilder.jpg"><div class="hover-cover">Website Builder</div></a>
+                <a target="_blank" href="rs-demo-dark-fullsite.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterMenu filterParallax filterLandingPage"><img src="assets/vendor/revolution-slider/assets/gridimages/dark_theme_blocks.jpg"><div class="hover-cover">Content Blocks Dark</div></a>
+                <a target="_blank" href="rs-demo-light-fullsite.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterMenu filterParallax filterLandingPage"><img src="assets/vendor/revolution-slider/assets/gridimages/light_theme_blocks.jpg"><div class="hover-cover">Content Blocks Light</div></a>
+                <a target="_blank" href="rs-demo-innovation.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterMenu filterParallax filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/innovation_premium.jpg"><div class="hover-cover">Innovation</div></a>
+                <a target="_blank" href="rs-demo-tech-journal.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterMenu filterParallax filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/tech_journal.jpg"><div class="hover-cover">Tech Journal</div></a>
+                <a target="_blank" href="rs-demo-cardealer.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/cardealership.jpg"><div class="hover-cover">Car Dealer</div></a>
+                <a target="_blank" href="rs-demo-creative-frontpage.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterMenu filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/creative_frontpage.jpg"><div class="hover-cover">Creative FrontPage</div></a>
+                <a target="_blank" href="rs-demo-fulscreen-menu.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterMenu filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/fullscreen_menu.jpg"><div class="hover-cover">FullScreen Menu</div></a>
+                <a target="_blank" href="rs-demo-agency-website.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/agencyslider.jpg"><div class="hover-cover">Agency Slider</div></a>
+
+                <a target="_blank" href="rs-demo-app-landing-page.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/app_landing_grid.jpg"><div class="hover-cover">App Landing Page</div></a>
+
+                <a target="_blank" href="rs-demo-coming-soon.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/comingsoon-1.jpg"><div class="hover-cover">Coming Soon</div></a>
+
+                <a target="_blank" href="rs-demo-desk-scene.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/deskscene.jpg"><div class="hover-cover">Desk Scene</div></a>
+
+                <a target="_blank" href="rs-demo-sleek-landing-page.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/landingpage.jpg"><div class="hover-cover">Premium Sleek Landing Page</div></a>
+
+                <a target="_blank" href="rs-demo-clean-news-slider.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/newsgallery.jpg"><div class="hover-cover">News Gallery</div></a>
+
+                <a target="_blank" href="rs-demo-image-gallery.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/photogallery.jpg"><div class="hover-cover">Photo Gallery</div></a>
+
+                <a target="_blank" href="rs-demo-rock-band-music.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/rockband_grid.jpg"><div class="hover-cover">Rock Band</div></a>
+
+                <a target="_blank" href="rs-demo-interactive-whiteboard.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/whiteboard.jpg"><div class="hover-cover">White Board Jim</div></a>
+
+                <a target="_blank" href="rs-demo-christmas-snow.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/xmas_slider.jpg"><div class="hover-cover">Xmas Slider</div></a>
+
+                <a target="_blank" href="rs-demo-premium-4kvideos.html" class="img-wrapper filterall filterSlider filterFullscreen filterSpecial filterParallax filterYouTube"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_better_youtube.jpg"><div class="hover-cover">4K YouTube Slider</div></a>
+
+                <a target="_blank" href="rs-demo-premium-team-slider.html" class="img-wrapper filterall filterSlider filterFullwidth filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_our_team_slider.jpg"><div class="hover-cover">Team Slider</div></a>
+
+                <a target="_blank" href="rs-demo-premium-team-carousel.html" class="img-wrapper filterall filterCarousel filterFullwidth filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_our_team_carousel.jpg"><div class="hover-cover">Team Carousel</div></a>
+
+                <a target="_blank" href="rs-demo-premium-restaurant.html" class="img-wrapper filterall filterHero filterFullscreen filterSpecial filterParallax filterYouTube"><img src="assets/vendor/revolution-slider/assets/gridimages/restaurant_grid.jpg"><div class="hover-cover">Fine Dining</div></a>
+
+                <a target="_blank" href="rs-demo-premium-agency.html" class="img-wrapper filterall filterHero filterFullscreen filterSpecial filterParallax filterYouTube"><img src="assets/vendor/revolution-slider/assets/gridimages/agency_grid.jpg"><div class="hover-cover">The Agency </div></a>
+
+                <a target="_blank" href="rs-demo-premium-concept.html" class="img-wrapper filterall filterSlider filterTimer filterFullscreen filterSpecial filterParallax filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_concept.jpg"><div class="hover-cover">Concept Slider</div></a>
+
+                <a target="_blank" href="rs-demo-premium-creative-freedom.html" class="img-wrapper filterall filterSlider filterDDD filterFullscreen filterSpecial filterParallax filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_creative_freedom.jpg"><div class="hover-cover">Creative Freedom</div></a>
+
+                <a target="_blank" href="rs-demo-premium-fullscreen-button.html" class="img-wrapper filterall filterSlider filterTimer filterAuto filterSpecial filterFullscreen filterParallax filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_fullscreen_button1.jpg"><div class="hover-cover">FullScreen Toggle</div></a>
+
+                <a target="_blank" href="rs-demo-premium-parallax-scene.html" class="img-wrapper filterall filterHero filterDDD filterAuto filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_parallax_scene.jpg"><div class="hover-cover">Parallax Scene</div></a>
+
+                <a target="_blank" href="rs-demo-premium-sliding-overlays.html" class="img-wrapper filterall filterSlider filterDDD filterFullscreen filterSpecial filterParallax filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_sliding_overlays.jpg"><div class="hover-cover">Wow Factor</div></a>
+
+                <a target="_blank" href="rs-demo-premium-webproduct-hero.html" class="img-wrapper filterall filterHero filterDDD filterFullwidth filterSpecial filterParallax filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_web_product_3d.jpg"><div class="hover-cover">Premium 3D WebProduct</div></a>
+
+                <a target="_blank" href="rs-demo-premium-ecommerce.html" class="img-wrapper filterall  filterSlider filterAuto filterSpecial "><img src="assets/vendor/revolution-slider/assets/gridimages/premium_woocommerce.jpg"><div class="hover-cover">Premium eCommerce</div></a>
+
+                <a target="_blank" href="rs-demo-carousel-classic.html" class="img-wrapper filterall filterCarousel filterTimer filterFullwidth filterParallax filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/carousel_classic1.jpg"><div class="hover-cover">Carousel Classic</div></a>
+
+                <a target="_blank" href="rs-demo-carousel-highlight.html" class="img-wrapper filterall filterCarousel filterFullwidth"><img src="assets/vendor/revolution-slider/assets/gridimages/carousel_highlight1.jpg"><div class="hover-cover">carousel highlight</div></a>
+
+                <a target="_blank" href="rs-demo-carousel-gallery.html" class="img-wrapper filterall filterCarousel filterAuto filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/carousel_instagram1.jpg"><div class="hover-cover">carousel instagram</div></a>
+
+                <a target="_blank" href="rs-demo-carousel-media.html" class="img-wrapper filterall filterCarousel filterFullwidth filterHTML5 filterYouTube filterVimeo filterTabs"><img src="assets/vendor/revolution-slider/assets/gridimages/carousel_media1.jpg"><div class="hover-cover">carousel media</div></a>
+
+                <a target="_blank" href="rs-demo-carousel-photography.html" class="img-wrapper filterall filterCarousel filterFullwidth filterFullscreen filterSpecial filterMenu"><img src="assets/vendor/revolution-slider/assets/gridimages/carousel_photography1.jpg"><div class="hover-cover">carousel photography</div></a>
+
+                <a target="_blank" href="rs-demo-carousel-showcase.html" class="img-wrapper filterall filterCarousel filterFullwidth"><img src="assets/vendor/revolution-slider/assets/gridimages/carousel_showcase1.jpg"><div class="hover-cover">carousel showcase</div></a>
+
+                <a target="_blank" href="rs-demo-hero-image.html" class="img-wrapper filterall filterHero filterFullwidth filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/hero_image1.jpg"><div class="hover-cover">hero image</div></a>
+
+                <a target="_blank" href="rs-demo-news-video.html" class="img-wrapper filterall filterHero filterFullwidth filterSpecial filterVimeo"><img src="assets/vendor/revolution-slider/assets/gridimages/hero_newscollection.jpg"><div class="hover-cover">hero newscollection</div></a>
+
+                <a target="_blank" href="rs-demo-hero-newsletter.html" class="img-wrapper filterall filterHero filterFullwidth filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/hero_newsletter1.jpg"><div class="hover-cover">hero newsletter</div></a>
+
+                <a target="_blank" href="rs-demo-hero-search-form.html" class="img-wrapper filterall filterHero filterFullwidth filterSpecial filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/hero_searchform.jpg"><div class="hover-cover">hero searchform</div></a>
+
+                <a target="_blank" href="rs-demo-hero-sports.html" class="img-wrapper filterall filterHero filterFullwidth filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/hero_sports1.jpg"><div class="hover-cover">hero sports</div></a>
+
+                <a target="_blank" href="rs-demo-hero-vimeo.html" class="img-wrapper filterall filterHero filterFullwidth filterVimeo"><img src="assets/vendor/revolution-slider/assets/gridimages/hero_vimeo1.jpg"><div class="hover-cover">hero vimeo</div></a>
+
+                <a target="_blank" href="rs-demo-hero-web-product-dark.html" class="img-wrapper filterall filterHero filterFullwidth filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/hero_webproductdark.jpg"><div class="hover-cover">hero webproductdark</div></a>
+
+                <a target="_blank" href="rs-demo-hero-web-product-light.html" class="img-wrapper filterall filterHero filterFullwidth filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/hero_webproductlight.jpg"><div class="hover-cover">hero webproductlight</div></a>
+
+                <a target="_blank" href="rs-demo-hero-youtube.html" class="img-wrapper filterall filterHero filterFullwidth filterYouTube"><img src="assets/vendor/revolution-slider/assets/gridimages/hero_youtube1.jpg"><div class="hover-cover">hero youtube</div></a>
+
+                <a target="_blank" href="rs-demo-premium-rotating-words.html" class="img-wrapper filterall filterFullwidth filterSpecial filterParallax filterFullscreen filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/premium_rotatingwords.jpg"><div class="hover-cover">premium rotating words</div></a>
+
+                <a target="_blank" href="rs-demo-premium-content-zoom.html" class="img-wrapper filterall filterFullwidth  filterSpecial filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/premium1_content_zoom.jpg"><div class="hover-cover">premium content zoom</div></a>
+
+                <a target="_blank" href="rs-demo-premium-scroll-effects.html" class="img-wrapper filterall filterFullwidth filterFullscreen filterParallax filterSpecial"><img src="assets/vendor/revolution-slider/assets/gridimages/premium2_big_bold.jpg"><div class="hover-cover">premium big bold</div></a>
+
+                <a target="_blank" href="rs-demo-premium-food-carousel.html" class="img-wrapper filterall filterFullwidth filterTabs"><img src="assets/vendor/revolution-slider/assets/gridimages/premium3_food_carousel.jpg"><div class="hover-cover">premium food carousel</div></a>
+
+                <a target="_blank" href="rs-demo-slider-classic.html" class="img-wrapper filterall filterSlider filterTimer filterAuto filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_classic1.jpg"><div class="hover-cover">slider classic</div></a>
+
+                <a target="_blank" href="rs-demo-slider-classic-full.html" class="img-wrapper filterall filterSlider filterTimer filterFullwidth filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_classicfull.jpg"><div class="hover-cover">slider classicfull</div></a>
+
+                <a target="_blank" href="rs-demo-gallery-light.html" class="img-wrapper filterall filterSlider filterAuto filterTabs"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_facebook.jpg"><div class="hover-cover">Gallery Light</div></a>
+
+                <a target="_blank" href="rs-demo-content-tabs.html" class="img-wrapper filterall filterSlider filterAuto filterTabs"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_fancytext.jpg"><div class="hover-cover">slider fancytext</div></a>
+
+                <a target="_blank" href="rs-demo-slider-fashion.html" class="img-wrapper filterall filterSlider filterFullwidth filterFullscreen filterScroll filterFront"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_fashion.jpg"><div class="hover-cover">slider fashion</div></a>
+
+                <a target="_blank" href="rs-demo-gallery-dark.html" class="img-wrapper filterall filterSlider filterAuto "><img src="assets/vendor/revolution-slider/assets/gridimages/slider_flickr.jpg"><div class="hover-cover">Gallery Dark</div></a>
+
+                <a target="_blank" href="rs-demo-slider-notgeneric.html" class="img-wrapper filterall filterSlider filterFullwidth filterFullscreen filterMenu filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_generic.jpg"><div class="hover-cover">slider generic</div></a>
+
+                <a target="_blank" href="rs-demo-slider-gym.html" class="img-wrapper filterall filterSlider filterFullwidth filterFullscreen filterScroll filterMenu filterFront filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_gym.jpg"><div class="hover-cover">slider gym</div></a>
+
+                <a target="_blank" href="rs-demo-slider-highlight-showcase.html" class="img-wrapper filterall filterSlider filterTimer filterAuto filterTabs"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_highlight1.jpg"><div class="hover-cover">slider highlight</div></a>
+
+                <a target="_blank" href="rs-demo-slider-levano-restaurant-bar.html" class="img-wrapper filterall filterSlider filterFullwidth filterFullscreen filterScroll filterFront filterSpecial filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_levano.jpg"><div class="hover-cover">slider levano</div></a>
+
+                <a target="_blank" href="rs-demo-slider-media.html" class="img-wrapper filterall filterSlider filterAuto filterHTML5 filterVimeo filterYouTube"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_media.jpg"><div class="hover-cover">slider media</div></a>
+
+                <a target="_blank" href="rs-demo-gallery-news.html" class="img-wrapper filterall filterSlider filterTimer filterFullwidth filterTabs filterParallax filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_news.jpg"><div class="hover-cover">slider news</div></a>
+
+                <a target="_blank" href="rs-demo-slider-photography.html" class="img-wrapper filterall filterSlider filterFullwidth filterFullscreen filterScroll filterFront filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_photography.jpg"><div class="hover-cover">slider photography</div></a>
+
+                <a target="_blank" href="rs-demo-gallery-vimeo.html" class="img-wrapper filterall filterSlider filterAuto filterTabs filterVimeo"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_vimeo.jpg"><div class="hover-cover">slider vimeo</div></a>
+
+                <a target="_blank" href="rs-demo-gallery-youtube.html" class="img-wrapper filterall filterSlider filterAuto filterTabs filterYouTube"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_youtube.jpg"><div class="hover-cover">slider youtube</div></a>
+
+                <a target="_blank" href="rs-demo-web-product-dark.html" class="img-wrapper filterall filterSlider filterFullwidth filterFullscreen filterScroll filterMenu filterFront filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_webproductdark.jpg"><div class="hover-cover">slider webproductdark</div></a>
+
+                <a target="_blank" href="rs-demo-web-product-light.html" class="img-wrapper filterall filterSlider filterFullwidth filterFullscreen filterScroll filterMenu filterFront filterHTML5"><img src="assets/vendor/revolution-slider/assets/gridimages/slider_webproductlight.jpg"><div class="hover-cover">slider webproductlight</div></a>
+
+                <a target="_blank" href="rs-demo-premium-travel.html" class="img-wrapper filterall filterSlider filterTimer filterAuto filterParallax"><img src="assets/vendor/revolution-slider/assets/gridimages/travelslider.jpg"><div class="hover-cover">travelslider</div></a>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+
+        <!--footer start-->
+        <footer class="bg-darker u-PaddingTop55 u-PaddingBottom55">
+            <div class="container text-center text-sm">
+                <ul class="list-inline text-paragraph u-MarginBottom20 u-LineHeight2">
+                    <li><a href="#">Facebook</a></li>
+                    <li>|</li>
+                    <li><a href="">Twitter</a></li>
+                    <li>|</li>
+                    <li><a href="">Google Plus</a></li>
+                    <li>|</li>
+                    <li><a href="">Fan Page</a></li>
+                    <li>|</li>
+                    <li><a href="">Mail Us</a></li>
+                    <li>|</li>
+                    <li><a href="">English</a></li>
+                </ul>
+                <p class=" u-MarginBottom5">Copyright 2017 @ Alien Template.</p>
+            </div>
+        </footer>
+        <!--footer end-->
+
+        <!-- inject:js -->
+        <script src="assets/vendor/jquery/jquery-1.12.0.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/vendor/bootsnav/js/bootsnav.js"></script>
+        <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/vendor/jquery.countTo/jquery.countTo.min.js"></script>
+        <script src="assets/vendor/owl.carousel2/owl.carousel.min.js"></script>
+        <script src="assets/vendor/jquery.appear/jquery.appear.js"></script>
+        <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/imagesloaded/imagesloaded.js"></script>
+        <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="assets/vendor/switchery/switchery.min.js"></script>
+        <script src="assets/vendor/swiper/js/swiper.min.js"></script>
+        <script src="assets/js/alien.js"></script>
+        <!-- endinject -->
+
+        <!-- revolution JS -->
+        <script src="assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script>
+            jQuery("document").ready(function() {
+                jQuery('.img-wrapper').hover(function() {
+                    var t = jQuery(this);
+                    punchgs.TweenLite.to(t.find('.hover-cover'),0.5,{autoAlpha:1,ease:punchgs.Power3.easeInOut});
+                }, function() {
+                    var t = jQuery(this);
+                    punchgs.TweenLite.to(t.find('.hover-cover'),0.5,{autoAlpha:0,ease:punchgs.Power3.easeInOut});
+                });
+
+                jQuery('body').on('click','.filter li',function() {
+                    var li=jQuery(this),
+                        n = new punchgs.TimelineLite;
+                    n.pause();
+                        n.add(punchgs.TweenLite.to(jQuery('.img-wrapper'),0.2,{autoAlpha:0,ease:punchgs.Power3.easeInOut}),0);
+
+                    jQuery('.img-wrapper').each(function() {
+                        var a = jQuery(this);
+                        if (a.hasClass(li.data('filter')))
+                            n.add(punchgs.TweenLite.to(a,0.2,{display:"block",autoAlpha:1,ease:punchgs.Power3.easeInOut}),0.23);
+                        else
+                            n.add(punchgs.TweenLite.to(a,0.001,{display:"none"}),0.21);
+                    });
+                    n.play();
+                    jQuery('.filter li.selected').removeClass("selected");
+                    li.addClass("selected");
+                });
+            })
+        </script>
+    </body>
+</html>
