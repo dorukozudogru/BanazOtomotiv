@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="~/Content/Site/assets/imgs/logo.png" />
 
     <title>Banaz Otomotiv</title>
 
@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="~/Content/Site/assets/vendor/animate.css/animate.min.css">
     <link rel="stylesheet" href="~/Content/Site/assets/vendor/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="~/Content/Site/assets/css/alien.min.css">
-
-    @*<link rel="stylesheet" href="~/css/site.css" />*@
 </head>
 <body>
     <header>
@@ -35,12 +33,12 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active scroll"><a href="#home">Home</a></li>
-                        <li class="scroll"><a href="#about">About</a></li>
-                        <li class="scroll"><a href="#service">Services</a></li>
+                        <li class="active scroll"><a href="#home">ANA SAYFA</a></li>
+                        <li class="scroll"><a href="#about">HAKKIMIZDA</a></li>
+                        <li class="scroll"><a href="#team">EKİBİMİZ</a></li>
+                        <li class="scroll"><a href="#service">İŞ KOLLARIMIZ</a></li>
                         <li class="scroll"><a href="#portfolio">Portfolio</a></li>
-                        <li class="scroll"><a href="#blog">Blog</a></li>
-                        <li class="scroll"><a href="#contact">Contact</a></li>
+                        <li class="scroll"><a href="#contact">İLETİŞİM</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,8 +46,10 @@
         <div class="clearfix"></div>
     </header>
     <div>
-        @RenderBody()
-        <partial name="_CookieConsentPartial" />
+        @*<partial name="_CookieConsentPartial" />*@
+        <main role="main">
+            @RenderBody()
+        </main>
     </div>
     <script src="~/Content/Site/assets/vendor/jquery/jquery-1.12.0.min.js"></script>
     <script src="~/Content/Site/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -64,21 +64,22 @@
     <script src="~/Content/Site/assets/vendor/switchery/switchery.min.js"></script>
     <script src="~/Content/Site/assets/vendor/swiper/js/swiper.min.js"></script>
     <script src="~/Content/Site/assets/js/alien.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCVkU7YnGfown4_i_sm6X36HP2jWTv54&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqHZbSKNBu1zXN0dFw13n_kvPbEPiCTk"></script>
     <script>
-        function initMap() {
+        $(document).ready(function () {
             var location, map, marker;
 
-            location = { lat: 23.810332, lng: 90.41251809999994 };
+            location = { lat: 39.79706798299095, lng: 30.4500760820846 };
             map = new google.maps.Map(document.getElementById('map'), {
                 center: location,
-                zoom: 10,
+                zoom: 15,
                 scrollwheel: false
             });
             marker = new google.maps.Marker({
                 position: location,
                 map: map
             });
-        }</script>
+        });
+    </script>
 </body>
 </html>
