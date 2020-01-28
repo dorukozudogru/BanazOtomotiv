@@ -1,77 +1,84 @@
 ﻿<!DOCTYPE html>
-<html>
+<html class="html">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BanazOtomotiv</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png" />
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
-              crossorigin="anonymous"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
-    </environment>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <title>Banaz Otomotiv</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:100%7COpen+Sans:300,400,400i,600,700,800">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="~/Content/Site/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/vendor/bootsnav/css/bootsnav.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/vendor/alien-icon/css/style.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/vendor/owl.carousel2/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/vendor/switchery/switchery.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="~/Content/Site/assets/css/alien.min.css">
+
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed navbar-scrollspy bootsnav" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BanazOtomotiv</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="./index.html"><img src="~/Content/Site/assets/imgs/logo.png" class="logo logo-scrolled" alt="" style="max-height:55px;max-width:120px"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active scroll"><a href="#home">Home</a></li>
+                        <li class="scroll"><a href="#about">About</a></li>
+                        <li class="scroll"><a href="#service">Services</a></li>
+                        <li class="scroll"><a href="#portfolio">Portfolio</a></li>
+                        <li class="scroll"><a href="#blog">Blog</a></li>
+                        <li class="scroll"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="clearfix"></div>
     </header>
-    <div class="container">
+    <div>
+        @RenderBody()
         <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
     </div>
+    <script src="~/Content/Site/assets/vendor/jquery/jquery-1.12.0.min.js"></script>
+    <script src="~/Content/Site/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Content/Site/assets/vendor/bootsnav/js/bootsnav.js"></script>
+    <script src="~/Content/Site/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="~/Content/Site/assets/vendor/jquery.countTo/jquery.countTo.min.js"></script>
+    <script src="~/Content/Site/assets/vendor/owl.carousel2/owl.carousel.min.js"></script>
+    <script src="~/Content/Site/assets/vendor/jquery.appear/jquery.appear.js"></script>
+    <script src="~/Content/Site/assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="~/Content/Site/assets/vendor/imagesloaded/imagesloaded.js"></script>
+    <script src="~/Content/Site/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="~/Content/Site/assets/vendor/switchery/switchery.min.js"></script>
+    <script src="~/Content/Site/assets/vendor/swiper/js/swiper.min.js"></script>
+    <script src="~/Content/Site/assets/js/alien.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCVkU7YnGfown4_i_sm6X36HP2jWTv54&callback=initMap"></script>
+    <script>
+        function initMap() {
+            var location, map, marker;
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - BanazOtomotiv - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
-        </script>
-    </environment>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-
-    @RenderSection("Scripts", required: false)
+            location = { lat: 23.810332, lng: 90.41251809999994 };
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: location,
+                zoom: 10,
+                scrollwheel: false
+            });
+            marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }</script>
 </body>
 </html>
