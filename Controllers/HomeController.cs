@@ -22,7 +22,7 @@ namespace BanazOtomotiv.Controllers
         }
 
         [HttpPost]
-        public void SendEmail(string FullName, string Email, string Phone, string Message)
+        public ActionResult SendEmail(string FullName, string Email, string Phone, string Message)
         {
             Guid newGuid = Guid.NewGuid();
             MailMessage msg = new MailMessage();
@@ -39,15 +39,24 @@ namespace BanazOtomotiv.Controllers
             msg.IsBodyHtml = true;
             msg.From = new MailAddress(Email, FullName);
             msg.Sender = new MailAddress(Email, FullName);
-            msg.To.Add("satisresepsiyon@banazotomotiv.com.tr");
-            //msg.To.Add("dorukozudogru.oplog@gmail.com");
+            //msg.To.Add("satisresepsiyon@banazotomotiv.com.tr");
+            msg.To.Add("dorukozudogru.oplog@gmail.com");
 
             msg.Subject = "BanazOtomotiv.com.tr Form E-Postası - " + newGuid;
             msg.Body = "<table><tr><td><b>İsim Soyisim: </b></td><td>" + FullName + "</td></tr>" +
                        "<tr><td><b>Email: </b></td><td>" + Email + "</td></tr>" +
                        "<tr><td><b>Telefon: </b></td><td>" + Phone + "</td></tr>" +
                        "<tr><td><b>Mesaj: </b></td><td>" + Message + "</td></tr></table>";
-            smtp.Send(msg);
+            try
+            {
+                smtp.Send(msg);
+                return Json(new { success = true });
+            }
+            catch (Exception)
+            {
+                return Json(new { success = false });
+            }
+            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
