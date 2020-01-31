@@ -56,21 +56,12 @@ namespace BanazOtomotiv.Controllers
             {
                 return Json(new { success = false });
             }
-            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        public class EmailViewModel
-        {
-            public string FullName { get; set; }
-            public string Email { get; set; }
-            public string Phone { get; set; }
-            public string Message { get; set; }
         }
     }
 }
