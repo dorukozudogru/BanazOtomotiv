@@ -15,7 +15,7 @@
     /*==============================================
      Back to top
      ===============================================*/
-    $body.append("<a href='.html' class='BackToTop BackToTop--hide ScrollTo'><i class='fa fa-angle-up'></i></a>");
+    $body.append("<a href='#home' class='BackToTop BackToTop--hide ScrollTo'><i class='fa fa-angle-up'></i></a>");
 
     var $liftOff = $('.BackToTop');
     $window.on('scroll', function () {
