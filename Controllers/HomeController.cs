@@ -26,21 +26,19 @@ namespace BanazOtomotiv.Controllers
         {
             Guid newGuid = Guid.NewGuid();
             MailMessage msg = new MailMessage();
-            SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+            SmtpClient smtp = new SmtpClient("mail.banazotomotiv.com.tr");
 
             smtp.Port = 587;
-            smtp.Host = "smtp.gmail.com";
-            smtp.EnableSsl = true;
+            smtp.Host = "mail.banazotomotiv.com.tr";
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.UseDefaultCredentials = false;
             smtp.Credentials = null;
-            smtp.Credentials = new System.Net.NetworkCredential("banazsigorta@gmail.com", "Banaz26.,");
+            smtp.Credentials = new System.Net.NetworkCredential("no-reply@banazotomotiv.com.tr", "BAnaz26.,");
 
             msg.IsBodyHtml = true;
-            msg.From = new MailAddress(Email, FullName);
-            msg.Sender = new MailAddress(Email, FullName);
-            //msg.To.Add("satisresepsiyon@banazotomotiv.com.tr");
-            msg.To.Add("dorukozudogru.oplog@gmail.com");
+            msg.From = new MailAddress("no-reply@banazotomotiv.com.tr", FullName);
+            msg.To.Add("satisresepsiyon@banazotomotiv.com.tr");
+            //msg.To.Add("dorukozudogru.oplog@gmail.com");
 
             msg.Subject = "BanazOtomotiv.com.tr Form E-Postası - " + newGuid;
             msg.Body = "<table><tr><td><b>İsim Soyisim: </b></td><td>" + FullName + "</td></tr>" +
@@ -52,7 +50,7 @@ namespace BanazOtomotiv.Controllers
                 smtp.Send(msg);
                 return Json(new { success = true });
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return Json(new { success = false });
             }
