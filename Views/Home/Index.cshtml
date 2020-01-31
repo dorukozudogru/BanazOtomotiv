@@ -1,4 +1,6 @@
-﻿<body>
+﻿@model BanazOtomotiv.Controllers.HomeController.EmailViewModel
+
+<body>
     <div id="home" class="swiper-container js-FullHeight">
         <div class="swiper-wrapper">
             <section class="swiper-slide ImageBackground ImageBackground--overlay ImageBackground--overlay--gradient-" data-overlay="2" data-scheme="light" data-swiper-autoplay="200">
@@ -53,35 +55,19 @@
                 <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
                     <p class="u-LineHeight2">Şirketimiz 65 senelik otomotiv sektörü tecrübesi ve 50 senelik akaryakıt sektörü tecrübesini 3 kuşaktır başarılı bir şekilde sürdürmektedir. Çağın yeniliklerine açık olan şirketimiz yenilenebilir enerji sektöründe 2017 yılından itibaren hizmet vermektedir. Faaliyet gösterdiğimiz sektörlerde müşteri memnuniyetini her zaman ön planda tutmak en önemli ilkemiz olmuştur.</p>
                     <p class="u-MarginTop100">
-                        <img class="img-responsive" src="~/Content/Site/assets/imgs/FHMI0373.jpg" alt="...">
+                        <img class="img-responsive" src="~/Content/Site/assets/imgs/NNFX0056.jpg" alt="...">
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="team" class="bg-darker u-PaddingTop60 u-PaddingBottom60">
-        <div class="container">
+    <section id="sahibinden" class="bg-darker u-PaddingTop60 u-PaddingBottom60">
+        <div class="container text-center">
             <div class="row u-MarginTop70">
-                <div class="col-md-4 col-sm-6 u-MarginBottom60">
-                    <div class="u-PaddingRight40 u-md-Padding0 u-sm-PaddingRight20 u-xs-PaddingLeft20">
-                        <img class="img-responsive" src="~/Content/Site/assets/imgs/t0.jpg" alt="...">
-                        <h4 class="u-MarginTop25 u-MarginBottom0">Jonathan Smith</h4>
-                        <p class="text-muted">Chief Operating Officer</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 u-MarginBottom60">
-                    <div class="u-PaddingLeft20 u-PaddingRight20 u-md-Padding0 u-sm-PaddingLeft20 u-xs-PaddingRight20">
-                        <img class="img-responsive" src="~/Content/Site/assets/imgs/t1.jpg" alt="...">
-                        <h4 class="u-MarginTop25 u-MarginBottom0">Rose Tellor</h4>
-                        <p class="text-muted">Vice Chairman</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 u-MarginBottom60">
-                    <div class="u-PaddingLeft40 u-md-Padding0 u-sm-PaddingLeft10 u-sm-PaddingRight10 u-xs-PaddingLeft20 u-xs-PaddingRight20">
-                        <img class="img-responsive" src="~/Content/Site/assets/imgs/t2.jpg" alt="...">
-                        <h4 class="u-MarginTop25 u-MarginBottom0">Josseph Butlar</h4>
-                        <p class="text-muted">Head of Marketing</p>
-                    </div>
+                <div class="u-MarginBottom60">
+                    <img class="img-responsive" src="~/Content/Site/assets/imgs/sahibinden.png" alt="BanazOtomotivSahibinden" style="max-height:100px;max-width:100px;display:inline !important;">
+                    <h4 class="u-MarginTop25 u-MarginBottom0">Banaz Otomotiv</h4>
+                    <p class="text-muted"><a href="https://banazotomotiv.sahibinden.com/" target="_blank">Güncel ilanlarımızı görmek için lütfen buraya tıklayınız.</a></p>
                 </div>
             </div>
         </div>
@@ -137,7 +123,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <h3 class="Blurb__hoverText">GES</h3>
+                            <h3 class="Blurb__hoverText">Banaz GES</h3>
                             <p class="Blurb__hoverText u-LineHeight2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
                         </div>
                     </div>
@@ -149,31 +135,25 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                    <h1 class="u-MarginTop10 u-MarginBottom35">Portfolio</h1>
-                </div>
-                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                    <p class="u-LineHeight2">Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo.</p>
-                    <p>
-                        <a class="btn btn-go btn-go--info" href="#" role="button">Read The Story <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </p>
+                    <h1 class="u-MarginTop10 u-MarginBottom35">İşletmemizden Görüntüler</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
                         <ul class="js-PortfolioFilter portfolio-filter text-center">
-                            <li class="active"><a href="#" data-filter="*"> All</a></li>
-                            <li><a href="#" data-filter=".cat1">Business</a></li>
-                            <li><a href="#" data-filter=".cat2">Personal</a></li>
-                            <li><a href="#" data-filter=".cat3">Printing</a></li>
+                            <li class="active"><a href="#" data-filter="*"> Tümü</a></li>
+                            <li><a href="#" data-filter=".cat1">Servis</a></li>
+                            <li><a href="#" data-filter=".cat2">Banaz GES</a></li>
+                            <li><a href="#" data-filter=".cat3">Akaryakıt İstasyonu</a></li>
                             <li><a href="#" data-filter=".cat4">App</a></li>
                             <li><a href="#" data-filter=".cat5">Web Design</a></li>
                         </ul>
                     </div>
                     <div class="js-Portfolio portfolio-grid portfolio-gallery grid-3 gutter">
                         <div class="portfolio-item cat1 cat3 cat5">
-                            <a href="~/Content/Site/assets/imgs/portfolio/portfolio-0.jpg" class="portfolio-image popup-gallery" title="We are creative">
-                                <img src="~/Content/Site/assets/imgs/portfolio/portfolio-0.jpg" alt="" />
+                            <a href="~/Content/Site/assets/imgs/car/KVIM7772.jpg" class="portfolio-image popup-gallery" title="We are creative">
+                                <img src="~/Content/Site/assets/imgs/car/KVIM7772.jpg" alt="" />
                                 <div class="portfolio-hover-title">
                                     <div class="portfolio-content">
                                         <h4>We are creative</h4>
@@ -186,8 +166,8 @@
                             </a>
                         </div>
                         <div class="portfolio-item cat1 cat3 cat5">
-                            <a href="~/Content/Site/assets/imgs/portfolio/portfolio-1.jpg" class="portfolio-image popup-gallery" title="We are creative">
-                                <img src="~/Content/Site/assets/imgs/portfolio/portfolio-1.jpg" alt="" />
+                            <a href="~/Content/Site/assets/imgs/car/KVIM7772.jpg" class="portfolio-image popup-gallery" title="We are creative">
+                                <img src="~/Content/Site/assets/imgs/car/KVIM7772.jpg" alt="" />
                                 <div class="portfolio-hover-title">
                                     <div class="portfolio-content">
                                         <h4>We are creative</h4>
@@ -200,8 +180,8 @@
                             </a>
                         </div>
                         <div class="portfolio-item cat2 cat3 cat4">
-                            <a href="~/Content/Site/assets/imgs/portfolio/portfolio-2.jpg" class="portfolio-image popup-gallery" title="Branding">
-                                <img src="~/Content/Site/assets/imgs/portfolio/portfolio-2.jpg" alt="" />
+                            <a href="~/Content/Site/assets/imgs/car/KVIM7772.jpg" class="portfolio-image popup-gallery" title="Branding">
+                                <img src="~/Content/Site/assets/imgs/car/KVIM7772.jpg" alt="" />
                                 <div class="portfolio-hover-title">
                                     <div class="portfolio-content">
                                         <h4>Branding</h4>
@@ -214,8 +194,8 @@
                             </a>
                         </div>
                         <div class="portfolio-item cat1 cat2 cat3">
-                            <a href="~/Content/Site/assets/imgs/portfolio/portfolio-3.jpg" class="portfolio-image popup-gallery" title="Design">
-                                <img src="~/Content/Site/assets/imgs/portfolio/portfolio-3.jpg" alt="" />
+                            <a href="~/Content/Site/assets/imgs/car/KVIM7772.jpg" class="portfolio-image popup-gallery" title="Design">
+                                <img src="~/Content/Site/assets/imgs/car/KVIM7772.jpg" alt="" />
                                 <div class="portfolio-hover-title">
                                     <div class="portfolio-content">
                                         <h4>Design</h4>
@@ -228,8 +208,8 @@
                             </a>
                         </div>
                         <div class="portfolio-item cat1 cat4">
-                            <a href="~/Content/Site/assets/imgs/portfolio/portfolio-4.jpg" class="portfolio-image popup-gallery" title="Photography">
-                                <img src="~/Content/Site/assets/imgs/portfolio/portfolio-4.jpg" alt="" />
+                            <a href="~/Content/Site/assets/imgs/car/KVIM7772.jpg" class="portfolio-image popup-gallery" title="Photography">
+                                <img src="~/Content/Site/assets/imgs/car/KVIM7772.jpg" alt="" />
                                 <div class="portfolio-hover-title">
                                     <div class="portfolio-content">
                                         <h4>Photography</h4>
@@ -242,8 +222,8 @@
                             </a>
                         </div>
                         <div class="portfolio-item cat3 cat5">
-                            <a href="~/Content/Site/assets/imgs/portfolio/portfolio-5.jpg" class="portfolio-image popup-gallery" title="Marketing">
-                                <img src="~/Content/Site/assets/imgs/portfolio/portfolio-5.jpg" alt="" />
+                            <a href="~/Content/Site/assets/imgs/car/KVIM7772.jpg" class="portfolio-image popup-gallery" title="Marketing">
+                                <img src="~/Content/Site/assets/imgs/car/KVIM7772.jpg" alt="" />
                                 <div class="portfolio-hover-title">
                                     <div class="portfolio-content">
                                         <h4>Marketing</h4>
@@ -256,8 +236,8 @@
                             </a>
                         </div>
                         <div class="portfolio-item cat4 cat5">
-                            <a href="~/Content/Site/assets/imgs/portfolio/portfolio-6.jpg" class="portfolio-image popup-gallery" title="Web Desgin">
-                                <img src="~/Content/Site/assets/imgs/portfolio/portfolio-6.jpg" alt="" />
+                            <a href="~/Content/Site/assets/imgs/car/KVIM7772.jpg" class="portfolio-image popup-gallery" title="Web Desgin">
+                                <img src="~/Content/Site/assets/imgs/car/KVIM7772.jpg" alt="" />
                                 <div class="portfolio-hover-title">
                                     <div class="portfolio-content">
                                         <h4>Web Design</h4>
@@ -331,28 +311,29 @@
                 </div>
             </div>
             <div class="row">
-                <form class="js-ContactForm" method="post">
+                <form class="js-ContactForm" asp-action="SendEmail">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="İsim Soyisim" name="name" data-error="İsim alanı zorunludur" required>
+                            <input asp-for="FullName" type="text" class="form-control" placeholder="İsim Soyisim" autocomplete="off" data-error="İsim alanı zorunludur" required>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="E-Posta" name="email" data-error="E-Posta alanı zorunludur" required>
+                            <input asp-for="Email" type="email" class="form-control" placeholder="E-Posta" autocomplete="off" data-error="E-Posta alanı zorunludur" required>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Telefon" name="phone">
+                            <input asp-for="Phone" type="tel" class="form-control" placeholder="Telefon" autocomplete="off">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea class="form-control" rows="4" placeholder="Mesajınız" name="message" data-error="Mesaj alanı zorunludur" required></textarea>
+                            <textarea asp-for="Message" class="form-control" rows="4" placeholder="Mesajınız" data-error="Mesaj alanı zorunludur" required></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
-                        <button type="submit" class="btn btn-gradient btn--alien btn-block">Gönder</button>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-gradient btn--alien btn-block">Gönder</button>
+                        </div>
                     </div>
-                    <input type="hidden" name="id" value="FORM2">
                 </form>
 
                 <div class="col-md-12">
@@ -376,11 +357,11 @@
                             <i class="fa fa-facebook"></i>
                         </a>
                         @*<a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-google-plus"></i>
-                        </a>*@
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>*@
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-12 text-right text-left--sm">
