@@ -16,11 +16,6 @@ namespace BanazOtomotiv.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         [HttpPost]
         public ActionResult SendEmail(string FullName, string Email, string Phone, string Message)
         {
