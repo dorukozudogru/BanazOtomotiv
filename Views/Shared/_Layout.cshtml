@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Banaz Otomotiv - Otomotiv Servisi, Akaryakıt İstasyonu, Banaz Güneş Enerji Santrali" />
     <link rel="shortcut icon" type="image/png" href="~/Content/Site/assets/logo_transparent.png" />
 
     <title>Banaz Otomotiv</title>
@@ -64,6 +65,13 @@
     <script src="~/Content/Site/assets/vendor/swiper/js/swiper.min.js"></script>
     <script src="~/Content/Site/assets/js/alien.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqHZbSKNBu1zXN0dFw13n_kvPbEPiCTk"></script>
+    @*<script src="https://www.google.com/recaptcha/api.js?render=6Lfi7tUUAAAAAJwuywpuCYXFKKG5gO9h-O0VIFkK"></script>*@
+    @*<script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Lfi7tUUAAAAAJwuywpuCYXFKKG5gO9h-O0VIFkK', { action: 'homepage' }).then(function (token) {
+            });
+        });
+    </script>*@
     <script>
         $(document).ready(function () {
             var location, map, marker;
@@ -96,12 +104,12 @@
                             'class': 'alert u-MarginTop20 js-Response',
                             'style': 'display:none'
                         });
-                    
+
                     if (!$form.data('isready')) {
                         $btn.after($response);
                         $form.data('isready', true);
                     }
-                    
+
                     if (e.isDefaultPrevented()) {
                         return;
                     }
