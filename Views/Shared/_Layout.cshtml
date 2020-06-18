@@ -46,7 +46,7 @@
         <div class="clearfix"></div>
     </header>
     <div>
-        @*<partial name="_CookieConsentPartial" />*@
+        <partial name="_CookieConsentPartial" />
         <main role="main">
             @RenderBody()
         </main>
@@ -86,6 +86,9 @@
                 position: location,
                 map: map
             });
+            $("#cookieOk").on("click", (function () {
+                $("#cookieConsent").fadeOut(200);
+            }));
         });
     </script>
     <script>
