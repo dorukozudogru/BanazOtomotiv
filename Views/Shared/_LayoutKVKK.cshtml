@@ -33,12 +33,13 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active scroll"><a href="#home">ANA SAYFA</a></li>
-                        <li class="scroll"><a href="#about">HAKKIMIZDA</a></li>
-                        <li class="scroll"><a href="#sahibinden">MAĞAZAMIZ</a></li>
-                        <li class="scroll"><a href="#service">İŞ KOLLARIMIZ</a></li>
-                        <li class="scroll"><a href="#portfolio">GÖRÜNTÜLER</a></li>
-                        <li class="scroll"><a href="#contact">İLETİŞİM</a></li>
+                        <li><a style="display:block" href="~/Home">ANASAYFA</a></li>
+                        <li class="scroll"><a href="#kvkk">KVKK</a></li>
+                        <li class="scroll"><a href="#imha-politikasi">İMHA POLİTİKASI</a></li>
+                        <li class="scroll"><a href="#aydinlatma-metni">AYDINLANMA METNİ</a></li>
+                        <li class="scroll"><a href="#organization">ORGANİZASYON ŞEMASI</a></li>
+                        <li class="scroll"><a href="#goal">KALİTE HEDEFİ</a></li>
+                        <li class="scroll"><a href="#mission">MİSYON VE VİZYON</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,88 +65,12 @@
     <script src="~/Content/Site/assets/vendor/switchery/switchery.min.js"></script>
     <script src="~/Content/Site/assets/vendor/swiper/js/swiper.min.js"></script>
     <script src="~/Content/Site/assets/js/alien.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqHZbSKNBu1zXN0dFw13n_kvPbEPiCTk"></script>
-    @*<script src="https://www.google.com/recaptcha/api.js?render=6Lfi7tUUAAAAAJwuywpuCYXFKKG5gO9h-O0VIFkK"></script>*@
-    @*<script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6Lfi7tUUAAAAAJwuywpuCYXFKKG5gO9h-O0VIFkK', { action: 'homepage' }).then(function (token) {
-            });
-        });
-    </script>*@
     <script>
         $(document).ready(function () {
-            var location, map, marker;
-
-            location = { lat: 39.79706798299095, lng: 30.4500760820846 };
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: location,
-                zoom: 15,
-                scrollwheel: false
-            });
-            marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
             $("#cookieOk").on("click", (function () {
                 $("#cookieConsent").fadeOut(200);
             }));
         });
-    </script>
-    <script>
-        (function ($) {
-            $(function () {
-                initMailer();
-            });
-
-            function initMailer() {
-                $('.js-ContactForm').on('submit', function (e) {
-                    $('.sendButton').attr("disabled", true);
-                    $('.sendButton').html("Lütfen Bekleyin...");
-                    var $form = $(this),
-                        $btn = $form.find('[type="submit"]'),
-                        $response = $('<div />', {
-                            'class': 'alert u-MarginTop20 js-Response',
-                            'style': 'display:none'
-                        });
-
-                    if (!$form.data('isready')) {
-                        $btn.after($response);
-                        $form.data('isready', true);
-                    }
-
-                    if (e.isDefaultPrevented()) {
-                        return;
-                    }
-                    e.preventDefault();
-
-                    $.post(
-                        '/Home/SendEmail',
-                        $form.serialize()
-                    ).done(function (r) {
-                        var $response = $form.find('.js-Response');
-                        if (r.success) {
-                            $response
-                                .addClass('alert-success')
-                                .text('E-postanız tarafımıza iletilmiştir. En kısa zamanda size dönüş sağlayacağız.')
-                                .slideDown()
-                                .delay(5000)
-                                .slideUp();
-                            $('.sendButton').attr("disabled", false);
-                            $('.sendButton').delay(1000).html("Gönder");
-                        } else {
-                            $response
-                                .addClass('alert-warning')
-                                .text('E-postanız gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.')
-                                .slideDown()
-                                .delay(5000)
-                                .slideUp();
-                            $('.sendButton').attr("disabled", false);
-                            $('.sendButton').delay(1000).html("Gönder");
-                        }
-                    });
-                });
-            }
-        }(jQuery))
     </script>
 </body>
 </html>
